@@ -7,12 +7,12 @@ $def: #F19000; /* function definition */
 $fun: #922E07; /* function calls */
 $comment: #999; /* comment */
 $string: #76A009; /* string */
-$builtin: #E4E4AE; /* true, false, Types etc */
+$builtin: #9E9E03; /* true, false, Types etc */
 $paren: #1EB6B6; /* parens, brackets */
 $matching_paren: $paren;
 $nonmatching_paren: #f88;
 
-$file_changed: ##AD0000;
+$file_changed: #AD0000;
 
 $active_line: #FAFFE8;
 $selected: #f2f2f2;

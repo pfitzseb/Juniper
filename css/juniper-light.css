@@ -96,7 +96,7 @@
 
 /* end */
 .cm-s-juniper-light span.cm-builtin {
-  color: #E4E4AE;
+  color: #9E9E03;
 }
 
 /* true, false, Types etc */
@@ -107,15 +107,15 @@
 
 /* parens, brackets */
 .cm-s-juniper-light span.cm-tag {
-  color: #E4E4AE;
+  color: #9E9E03;
 }
 
 .cm-s-juniper-light span.cm-attribute {
-  color: #E4E4AE;
+  color: #9E9E03;
 }
 
 .cm-s-juniper-light span.cm-header {
-  color: #E4E4AE;
+  color: #9E9E03;
 }
 
 .cm-s-juniper-light span.cm-quote {
@@ -131,7 +131,7 @@
 }
 
 .cm-s-juniper-light span.cm-symbol {
-  color: #E4E4AE;
+  color: #9E9E03;
 }
 
 .cm-s-juniper-light a.file-link {
