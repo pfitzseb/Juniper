@@ -10,13 +10,9 @@
   background: #fff;
 }
 
-#multi.theme-juniper-light .list .active, #multi.theme-juniper-light .list li:hover {
-  background: #fff;
-  color: #222;
-}
-
+/*#multi.theme-juniper-light .list .active, #multi.theme-juniper-light .list li:hover { background: #f0f0f0; color: $fg; }*/
 #multi.theme-juniper-light .list .dirty {
-  color: #f22;
+  color: #AD0000;
 }
 
 .cm-s-juniper-light {

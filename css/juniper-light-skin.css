@@ -57,8 +57,8 @@ input {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #606970;
-  border: 1px solid #606970;
+  background: #D5D5D5;
+  border: 1px solid #D5D5D5;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -76,7 +76,7 @@ input {
 
 .inline-result {
   background: #505D6B;
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .inline-exception pre {
@@ -86,7 +86,7 @@ input {
 
 .underline-result pre {
   background: transparent;
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .inline-doc {
@@ -98,11 +98,11 @@ input {
 }
 
 .inline-doc h3, .inline-doc h2 {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .underline-result .inline-doc pre {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .inspector-object h2:before {
@@ -110,7 +110,7 @@ input {
 }
 
 .inspector-object em {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .inspector-object {
@@ -133,9 +133,16 @@ input {
   background: transparent;
 }
 
+#multi .list ul {
+  height: 25px !important;
+  margin-top: 6px !important;
+}
+
 #multi .list li {
   box-sizing: border-box;
   height: 29px;
+  border: 1px solid #EBEBEB;
+  border-bottom: 0;
 }
 
 #multi .list .active, #multi .list li:hover {
@@ -144,7 +151,7 @@ input {
 }
 
 #multi .list .dirty {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 #multi .list .dirty .file-name:after {
@@ -175,11 +182,11 @@ input {
 
 #bottom-bar .content {
   background: #fff;
-  border-top: 0px solid #444;
+  border-top: 0px solid #EBEBEB;
 }
 
 .console > li, .console td {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .console > li + li {
@@ -220,7 +227,7 @@ input {
 
 #instarepl .livetoggler {
   background: #505D6B;
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 #instarepl .livetoggler.off {
@@ -234,13 +241,13 @@ input {
 }
 
 #instarepl .use-result {
-  background: #3E6B6B;
-  color: #7FFFFD;
+  background: #D9EEEE;
+  color: #0063B3;
 }
 
 #instarepl .result-result {
   background: #505D6B;
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 #instarepl .exception-result {
@@ -254,13 +261,13 @@ input {
 
 .popup > div > div {
   background: #505D6B;
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .popup .button {
   background: transparent;
-  border: 2px solid #C7E6FF;
-  color: #C7E6FF;
+  border: 2px solid #006EC7;
+  color: #006EC7;
 }
 
 .popup label {
@@ -271,23 +278,23 @@ input {
 .popup input {
   background: transparent;
   padding: 8px 10px;
-  border: 2px solid #C7E6FF;
-  color: #C7E6FF;
+  border: 2px solid #006EC7;
+  color: #006EC7;
   width: 60%;
 }
 
 .popup input::-webkit-input-placeholder {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .popup .button:hover, .popup .button.active {
-  background: #C7E6FF !important;
+  background: #006EC7 !important;
   color: #505D6B;
 }
 
 .popup ::-webkit-scrollbar-thumb {
-  background: #C7E6FF;
-  border: 1px solid #C7E6FF;
+  background: #006EC7;
+  border: 1px solid #006EC7;
 }
 
 #version-info {
@@ -318,7 +325,7 @@ input {
 }
 
 .filter-list em {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .filter-list .selected, .filter-list li:hover {
@@ -327,7 +334,7 @@ input {
 }
 
 .filter-list .selected em, .filter-list li:hover em {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 #left-bar .content {
@@ -336,8 +343,8 @@ input {
 }
 
 #left-bar ::-webkit-scrollbar-thumb {
-  background: #606970;
-  border: 1px solid #606970;
+  background: #D5D5D5;
+  border: 1px solid #D5D5D5;
 }
 
 #left-bar .workspace ul.buttons li:hover:not(.sep) {
@@ -430,7 +437,7 @@ input {
 }
 
 #right-bar .docs-search h2 {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 #right-bar .docs-search h3 {
@@ -471,7 +478,7 @@ input {
 }
 
 #right-bar .clients .list li h2 {
-  color: #C7E6FF;
+  color: #006EC7;
   font-size: 12pt;
 }
 
@@ -508,7 +515,7 @@ input {
 }
 
 #right-bar .clients .list .active .button:hover {
-  background: #C7E6FF !important;
+  background: #006EC7 !important;
   color: #505D6B;
 }
 
@@ -567,7 +574,7 @@ input {
 
 #status .console-toggle.dirty {
   background: #505D6B;
-  color: #C7E6FF;
+  color: #006EC7;
   display: inline-block;
 }
 
@@ -582,11 +589,11 @@ input {
 }
 
 #status .log .tip {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 #statusbar {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #EBEBEB;
 }
 
 #find-bar input {
@@ -632,8 +639,8 @@ input {
 }
 
 #browser ::-webkit-scrollbar-thumb {
-  background: #606970;
-  border: 1px solid #606970;
+  background: #D5D5D5;
+  border: 1px solid #D5D5D5;
 }
 
 .docs ::-webkit-scrollbar {
@@ -649,8 +656,8 @@ input {
 }
 
 .docs ::-webkit-scrollbar-thumb {
-  background: #606970;
-  border: 1px solid #606970;
+  background: #D5D5D5;
+  border: 1px solid #D5D5D5;
 }
 
 .search-results .path, .search-results .line {
@@ -679,11 +686,11 @@ input {
 }
 
 .search-results .path {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .search-results .file {
-  color: #7FFFFD;
+  color: #0063B3;
 }
 
 .search-results input {
@@ -698,13 +705,13 @@ input {
   display: inline-block;
   padding-left: 2px;
   vertical-align: top;
-  background: #3E6B6B;
-  color: #7FFFFD;
+  background: #D9EEEE;
+  color: #0063B3;
   border-radius: 0px;
 }
 
 .CodeMirror .watched {
-  border-bottom: 1px solid #7FFFFD;
+  border-bottom: 1px solid #0063B3;
 }
 
 .hintwrapper {
@@ -738,13 +745,13 @@ input {
   padding-left: 20px;
   box-sizing: border-box;
   background: none;
-  color: #7FFFFD;
+  color: #0063B3;
 }
 
 .behavior-helper-result div {
   white-space: nowrap;
   width: -webkit-fit-content;
-  background: #3E6B6B;
+  background: #D9EEEE;
   padding: 0px 5px;
   border-radius: 0px;
   margin-top: 0px;
@@ -767,7 +774,7 @@ input {
   margin-bottom: 3px;
   padding: 2px 5px !important;
   margin-top: 5px;
-  border: 1px solid #7FFFFD;
+  border: 1px solid #0063B3;
 }
 
 .behavior-helper-result div > span.spacer {
@@ -776,8 +783,8 @@ input {
 }
 
 .behavior-helper-result .active {
-  background: #7FFFFD;
-  color: #3E6B6B;
+  background: #D9EEEE;
+  color: #0063B3;
   border-radius: 0px;
   display: inline-block;
 }
@@ -811,7 +818,7 @@ input {
 }
 
 .plugin-manager li h1 {
-  color: #C7E6FF;
+  color: #006EC7;
 }
 
 .plugin-manager li.has-update .version {
@@ -827,7 +834,7 @@ input {
 }
 
 .plugin-manager li + li {
-  border-top: 1px solid #444;
+  border-top: 1px solid #EBEBEB;
 }
 
 .plugin-manager > ul > li:hover {
@@ -854,8 +861,8 @@ input {
 
 .plugin-manager .install {
   box-sizing: border-box;
-  color: #3E6B6B;
-  background: #7FFFFD;
+  color: #D9EEEE;
+  background: #0063B3;
   display: inline-block;
   height: 25px;
   position: absolute;
@@ -934,7 +941,7 @@ input {
   width: 5px;
   top: 25px;
   right: 0;
-  background: #C7E6FF;
+  background: #006EC7;
   overflow: hidden;
   -webkit-transition: width 0.1s ease-in-out, right 0.1s ease-in-out;
 }
@@ -995,7 +1002,11 @@ input {
 }
 
 #side .content {
-  border-right: 1px solid #444;
+  border-right: 1px solid #EBEBEB;
+}
+
+#multi {
+  top: 0;
 }
 
 #multi .list {
@@ -1004,7 +1015,7 @@ input {
 
 #multi .list li {
   height: 29px;
-  padding: 6px 10px;
+  padding: 3px 10px;
   font-size: 9pt;
   text-align: left;
 }
@@ -1119,6 +1130,6 @@ button {
 }
 
 .CodeMirror-hints ul::-webkit-scrollbar-thumb {
-  background: #606970;
-  border-color: #606970;
+  background: #D5D5D5;
+  border-color: #D5D5D5;
 }

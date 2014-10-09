@@ -12,7 +12,7 @@ $paren: #1EB6B6; /* parens, brackets */
 $matching_paren: $paren;
 $nonmatching_paren: #f88;
 
-$file_changed: #f22;
+$file_changed: ##AD0000;
 
 $active_line: #FAFFE8;
 $selected: #f2f2f2;
@@ -30,7 +30,7 @@ $exception_bg: #FFC8C8;
 
 
 #multi.theme-juniper-light .content { background: $bg; }
-#multi.theme-juniper-light .list .active, #multi.theme-juniper-light .list li:hover { background:$bg; color: $fg; }
+/*#multi.theme-juniper-light .list .active, #multi.theme-juniper-light .list li:hover { background: #f0f0f0; color: $fg; }*/
 #multi.theme-juniper-light .list .dirty { color: $file_changed; }
  
 .cm-s-juniper-light { background: $bg; color: $fg }

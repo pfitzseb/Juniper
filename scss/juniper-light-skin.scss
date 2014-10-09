@@ -2,10 +2,10 @@
 $bg: #fff;
 $fg: #333;
 $multi: #f0f0f0;
-$border: #444;
+$border: #EBEBEB;
 $shadow: black;
 
-$scrollbar: #606970;
+$scrollbar: #D5D5D5;
 $placeholder-fg: #aaa;
 $dim-fg: #bbb;
 $bright-fg: #aaa;
@@ -37,23 +37,23 @@ $error-fg: #FFA6A6;
 $error-highlight-fg: #FFCDCD;
 $error-border: #aF5D5D;
 
-$usage-bg: #3E6B6B;
-$usage-fg: #7FFFFD;
+$usage-bg: #D9EEEE;
+$usage-fg: #0063B3;
 
 $result-bg: #505D6B;
-$result-fg: #C7E6FF;
+$result-fg: #006EC7;
 
 $overlay-dimmer: rgba(0,0,0,0.5);
 
-$accent-foreground: #C7E6FF;
+$accent-foreground: #006EC7;
 $accent-background: #505D6B;
 $light-accent-background: #18B1CC;
 $light-accent-foreground: #CCFCFF;
 $dark-accent-background: #505D6B;
 
-$secondary-accent-fg: #7FFFFD;
-$secondary-accent-bg: #3E6B6B;
-$secondary-accent-dim-fg: #C7E6FF;
+$secondary-accent-fg: #0063B3;
+$secondary-accent-bg: #D9EEEE;
+$secondary-accent-dim-fg: #006EC7;
 $secondary-accent-desat-fg: $fg;
 
 $tertiary-accent-fg: #DFC7FF;
@@ -194,9 +194,16 @@ input {
 	background: transparent;
 }
 
+#multi .list ul {
+	height: 25px !important;
+	margin-top: 6px !important;
+}
+
 #multi .list li {
 	box-sizing: border-box;
 	height: 29px;
+	border: 1px solid $border;
+	border-bottom: 0;
 }
 
 #multi .list .active, #multi .list li:hover {
@@ -376,7 +383,7 @@ input {
 }
 
 .filter-list em {
-	color: #C7E6FF;
+	color: $accent-foreground;
 }
 
 .filter-list .selected, .filter-list li:hover {
@@ -775,8 +782,8 @@ input {
 	margin: 0 5px;
 }
 .behavior-helper-result .active {
-	background: $usage-fg;
-	color: $usage-bg;
+	background: $usage-bg;
+	color: $usage-fg;
 	border-radius: 0px;
 	display: inline-block;
 }
@@ -972,12 +979,16 @@ input {
     border-right: 1px solid $border;
 }
 
+#multi {
+	top: 0;
+}
+
 #multi .list {
 	margin: 0;
 }
 #multi .list li {
 	height: 29px;
-	padding: 6px 10px;
+	padding: 3px 10px;
 	font-size: 9pt;
 	text-align: left;
 }
