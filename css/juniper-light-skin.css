@@ -985,7 +985,7 @@ input {
 #right-bar .clients .load-wrapper .img {
   width: 20px;
   height: 20px;
-  background: url("../img/connectingloader.gif");
+  background: url("../img/anim.gif");
 }
 
 #titlebar .button {
@@ -993,7 +993,7 @@ input {
 }
 
 .load-wrapper .img {
-  background: url("../img/loaderdark.gif");
+  background: url("../img/anim.gif");
 }
 
 .timed {
