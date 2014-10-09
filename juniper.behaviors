@@ -1,5 +1,6 @@
 {:+ {:app [(:lt.objs.style/provide-theme "juniper-dark" "css/juniper-dark.css")
 		   (:lt.objs.style/provide-skin "juniper-dark" "css/juniper-dark-skin.css")
+		   (:lt.objs.style/provide-skin "juniper-light" "css/juniper-light-skin.css")
 
            (:lt.objs.style/font-settings ["Consolas", "Liberation Mono", "Courier", "monospace"] 9 1.5)]
 
