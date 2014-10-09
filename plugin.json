@@ -1,0 +1,10 @@
+{
+  "name": "Juniper",
+  "author": "Varanas",
+  "version": "0.1.0",
+  "source": "",
+  "desc": "berries! :)",
+  "dependencies": {
+  },
+  "behaviors": "juniper.behaviors"
+}
