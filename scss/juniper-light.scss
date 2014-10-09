@@ -1,0 +1,130 @@
+/*defs*/
+$bg: #fff;
+$fg: #222;
+$keyword: #33c; /* if, while... */
+$number: #005555;
+$def: #F19000; /* function definition */
+$fun: #922E07; /* function calls */
+$comment: #999; /* comment */
+$string: #76A009; /* string */
+$builtin: #E4E4AE; /* true, false, Types etc */
+$paren: #1EB6B6; /* parens, brackets */
+$matching_paren: $paren;
+$nonmatching_paren: #f88;
+
+$file_changed: #f22;
+
+$active_line: #FAFFE8;
+$selected: #f2f2f2;
+$cursor: black;
+
+$search_fg: #555;
+$search_curr_bg: #e0e0e0;
+$search_bg: $selected;
+
+$res_fg: #333;
+$inline_res_bg: #E5ECFA;
+$underline_res_bg: #F7FCFF;
+$doc_bg: #F7FCFF;
+$exception_bg: #FFC8C8;
+
+
+#multi.theme-juniper-light .content { background: $bg; }
+#multi.theme-juniper-light .list .active, #multi.theme-juniper-light .list li:hover { background:$bg; color: $fg; }
+#multi.theme-juniper-light .list .dirty { color: $file_changed; }
+ 
+.cm-s-juniper-light { background: $bg; color: $fg }
+.cm-s-juniper-light span.cm-keyword {color: $keyword; font-weight:bold;} /* if, while... */
+.cm-s-juniper-light span.cm-atom {color: $fun;}
+.cm-s-juniper-light span.cm-number {color: $number;}
+.cm-s-juniper-light span.cm-def {color: $def; font-weight: bold;} /* function definition */
+.cm-s-juniper-light span.cm-variable {color: $fg;}
+.cm-s-juniper-light span.cm-variable-2 {color: $fun; font-weight: bold;} /* function calls */
+.cm-s-juniper-light span.cm-variable-3 {color: $fun;}
+.cm-s-juniper-light span.cm-property {color: $fg;}
+.cm-s-juniper-light span.cm-operator {color: $fun; font-weight: bold;} /* operators, ., :, = */
+.cm-s-juniper-light span.cm-comment {color: $comment; font-style: italic;} /* comment */
+.cm-s-juniper-light span.cm-string {color: $string;}
+.cm-s-juniper-light span.cm-string-2 {color: $string;}
+.cm-s-juniper-light span.cm-meta {color: $def; font-weight:bold;} /* @macros */
+.cm-s-juniper-light span.cm-error {color: #f55; background: $exception_bg;}
+.cm-s-juniper-light span.cm-qualifier {color: $keyword; font-weight:bold;} /* end */
+.cm-s-juniper-light span.cm-builtin {color: $builtin;} /* true, false, Types etc */
+.cm-s-juniper-light span.cm-bracket {color: $paren; background: none;} /* parens, brackets */
+.cm-s-juniper-light span.cm-tag {color: $builtin;}
+.cm-s-juniper-light span.cm-attribute {color: $builtin;}
+.cm-s-juniper-light span.cm-header {color: $builtin;}
+.cm-s-juniper-light span.cm-quote {color: #0f0;}
+.cm-s-juniper-light span.cm-hr {color: $comment;}
+.cm-s-juniper-light span.cm-link {color: #00f;}
+.cm-s-juniper-light span.cm-symbol {color: $builtin; }
+.cm-s-juniper-light a.file-link {color: $keyword; }
+ 
+.cm-s-juniper-light span.cm-bracket0, .cm-s-juniper-light span.cm-bracket-mismatched { color:$nonmatching_paren;}
+.cm-s-juniper-light span.CodeMirror-searching { background: #aaa; color:black; }
+.cm-s-juniper-light span.CodeMirror-searching-active { background: #afa; color:black; }
+.cm-s-juniper-light div.CodeMirror-selected {background: $selected !important;}
+.cm-s-juniper-light div.CodeMirror-cursor {border-left: 1px solid $cursor;}
+.cm-s-juniper-light .CodeMirror-activeline-background { background: $active_line; }
+.cm-s-juniper-light .CodeMirror-matchingbracket {
+	font-weight: bold;
+	color: $matching_paren !important;
+}
+.cm-s-juniper-light .CodeMirror-nonmatchingbracket {
+	font-weight: bold;
+	text-decoration: line-through;
+	color: $nonmatching_paren !important;
+}
+.cm-s-juniper-light .cm-searching { background:$search_bg; border-radius:0px; color:$fg !important; }
+.cm-s-juniper-light .searching-current { background:$search_curr_bg; color: $search_fg !important; }
+ 
+/* Light Table stuff */
+
+.julia {
+	font-family: inherit !important;
+	max-width: inherit !important;
+}
+ 
+.theme-juniper-light .inline-result {
+	background: $inline_res_bg;
+	color: $res_fg;
+	border-radius: 10px;
+}
+ 
+.theme-juniper-light .underline-result {
+	background: $underline_res_bg;
+	padding: 0 0 0 10px;
+	color: $res_fg;
+	border-top: 1px solid #777;
+	border-bottom: 1px solid #777;
+	margin: 8px 0 8px 0;
+}
+ 
+.theme-juniper-light .inline-doc {
+	padding: 0 0 0 10px;
+	margin: 8px 0 8px 0;
+	background: $doc_bg;
+	color: $res_fg;
+}
+ 
+.theme-juniper-light .inline-exception {
+	max-width: 101%;
+	border-top: 1px solid #777;
+	border-bottom: 1px solid #777;
+	margin: 8px 0 8px -10px !important;
+	background: $exception_bg;
+	color: $res_fg;
+	margin: 8px 0 8px 0;
+	padding: 0 0 0 10px;
+}
+ 
+.theme-juniper-light  .inline-exception > div{
+	max-width: inherit !important;
+	background-color: $exception_bg;
+}
+ 
+.theme-juniper-light .inline-doc pre {
+	padding: 0 0 0 10px;
+	margin: 8px 0 8px 0;
+	color: $res_fg;
+}

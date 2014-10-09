@@ -1,0 +1,241 @@
+/*defs*/
+/* if, while... */
+/* function definition */
+/* function calls */
+/* comment */
+/* string */
+/* true, false, Types etc */
+/* parens, brackets */
+#multi.theme-juniper-light .content {
+  background: #fff;
+}
+
+#multi.theme-juniper-light .list .active, #multi.theme-juniper-light .list li:hover {
+  background: #fff;
+  color: #222;
+}
+
+#multi.theme-juniper-light .list .dirty {
+  color: #f22;
+}
+
+.cm-s-juniper-light {
+  background: #fff;
+  color: #222;
+}
+
+.cm-s-juniper-light span.cm-keyword {
+  color: #33c;
+  font-weight: bold;
+}
+
+/* if, while... */
+.cm-s-juniper-light span.cm-atom {
+  color: #922E07;
+}
+
+.cm-s-juniper-light span.cm-number {
+  color: #005555;
+}
+
+.cm-s-juniper-light span.cm-def {
+  color: #F19000;
+  font-weight: bold;
+}
+
+/* function definition */
+.cm-s-juniper-light span.cm-variable {
+  color: #222;
+}
+
+.cm-s-juniper-light span.cm-variable-2 {
+  color: #922E07;
+  font-weight: bold;
+}
+
+/* function calls */
+.cm-s-juniper-light span.cm-variable-3 {
+  color: #922E07;
+}
+
+.cm-s-juniper-light span.cm-property {
+  color: #222;
+}
+
+.cm-s-juniper-light span.cm-operator {
+  color: #922E07;
+  font-weight: bold;
+}
+
+/* operators, ., :, = */
+.cm-s-juniper-light span.cm-comment {
+  color: #999;
+  font-style: italic;
+}
+
+/* comment */
+.cm-s-juniper-light span.cm-string {
+  color: #76A009;
+}
+
+.cm-s-juniper-light span.cm-string-2 {
+  color: #76A009;
+}
+
+.cm-s-juniper-light span.cm-meta {
+  color: #F19000;
+  font-weight: bold;
+}
+
+/* @macros */
+.cm-s-juniper-light span.cm-error {
+  color: #f55;
+  background: #FFC8C8;
+}
+
+.cm-s-juniper-light span.cm-qualifier {
+  color: #33c;
+  font-weight: bold;
+}
+
+/* end */
+.cm-s-juniper-light span.cm-builtin {
+  color: #E4E4AE;
+}
+
+/* true, false, Types etc */
+.cm-s-juniper-light span.cm-bracket {
+  color: #1EB6B6;
+  background: none;
+}
+
+/* parens, brackets */
+.cm-s-juniper-light span.cm-tag {
+  color: #E4E4AE;
+}
+
+.cm-s-juniper-light span.cm-attribute {
+  color: #E4E4AE;
+}
+
+.cm-s-juniper-light span.cm-header {
+  color: #E4E4AE;
+}
+
+.cm-s-juniper-light span.cm-quote {
+  color: #0f0;
+}
+
+.cm-s-juniper-light span.cm-hr {
+  color: #999;
+}
+
+.cm-s-juniper-light span.cm-link {
+  color: #00f;
+}
+
+.cm-s-juniper-light span.cm-symbol {
+  color: #E4E4AE;
+}
+
+.cm-s-juniper-light a.file-link {
+  color: #33c;
+}
+
+.cm-s-juniper-light span.cm-bracket0, .cm-s-juniper-light span.cm-bracket-mismatched {
+  color: #f88;
+}
+
+.cm-s-juniper-light span.CodeMirror-searching {
+  background: #aaa;
+  color: black;
+}
+
+.cm-s-juniper-light span.CodeMirror-searching-active {
+  background: #afa;
+  color: black;
+}
+
+.cm-s-juniper-light div.CodeMirror-selected {
+  background: #f2f2f2 !important;
+}
+
+.cm-s-juniper-light div.CodeMirror-cursor {
+  border-left: 1px solid black;
+}
+
+.cm-s-juniper-light .CodeMirror-activeline-background {
+  background: #FAFFE8;
+}
+
+.cm-s-juniper-light .CodeMirror-matchingbracket {
+  font-weight: bold;
+  color: #1EB6B6 !important;
+}
+
+.cm-s-juniper-light .CodeMirror-nonmatchingbracket {
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #f88 !important;
+}
+
+.cm-s-juniper-light .cm-searching {
+  background: #f2f2f2;
+  border-radius: 0px;
+  color: #222 !important;
+}
+
+.cm-s-juniper-light .searching-current {
+  background: #e0e0e0;
+  color: #555 !important;
+}
+
+/* Light Table stuff */
+.julia {
+  font-family: inherit !important;
+  max-width: inherit !important;
+}
+
+.theme-juniper-light .inline-result {
+  background: #E5ECFA;
+  color: #333;
+  border-radius: 10px;
+}
+
+.theme-juniper-light .underline-result {
+  background: #F7FCFF;
+  padding: 0 0 0 10px;
+  color: #333;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  margin: 8px 0 8px 0;
+}
+
+.theme-juniper-light .inline-doc {
+  padding: 0 0 0 10px;
+  margin: 8px 0 8px 0;
+  background: #F7FCFF;
+  color: #333;
+}
+
+.theme-juniper-light .inline-exception {
+  max-width: 101%;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  margin: 8px 0 8px -10px !important;
+  background: #FFC8C8;
+  color: #333;
+  margin: 8px 0 8px 0;
+  padding: 0 0 0 10px;
+}
+
+.theme-juniper-light .inline-exception > div {
+  max-width: inherit !important;
+  background-color: #FFC8C8;
+}
+
+.theme-juniper-light .inline-doc pre {
+  padding: 0 0 0 10px;
+  margin: 8px 0 8px 0;
+  color: #333;
+}

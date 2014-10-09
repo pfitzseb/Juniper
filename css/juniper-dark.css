@@ -1,99 +1,238 @@
-#multi.theme-juniper-dark .content { background: #172734; }
-#multi.theme-juniper-dark .list .active, #multi.theme-juniper-dark .list li:hover { background:#172734; color:#eee; }
-#multi.theme-juniper-dark .list .dirty { color:#f50; }
- 
-.cm-s-juniper-dark { background: #172734; color: #eee }
-.cm-s-juniper-dark span.cm-keyword {color: #8199A3; font-weight:bold;} /* if, while... */
-.cm-s-juniper-dark span.cm-atom {color: #5B90D4;}
-.cm-s-juniper-dark span.cm-number {color: #009999;}
-.cm-s-juniper-dark span.cm-def {color: #FC9906; font-weight: bold;} /* function definition */
-.cm-s-juniper-dark span.cm-variable {color: #eee;}
-.cm-s-juniper-dark span.cm-variable-2 {color: #5B90D4; font-weight: bold;} /* function calls */
-.cm-s-juniper-dark span.cm-variable-3 {color: #5B90D4;}
-.cm-s-juniper-dark span.cm-property {color: #eee;}
-.cm-s-juniper-dark span.cm-operator {color: #5B90D4; font-weight: bold;} /* operators, ., :, = */
-.cm-s-juniper-dark span.cm-comment {color: #999; font-style: italic;} /* comment */
-.cm-s-juniper-dark span.cm-string {color: #62C610;}
-.cm-s-juniper-dark span.cm-string-2 {color: #62C610;}
-.cm-s-juniper-dark span.cm-meta {color: #FC9906; font-weight:bold;} /* @macros */
-.cm-s-juniper-dark span.cm-error {color: #f55; background: #400;}
-.cm-s-juniper-dark span.cm-qualifier {color: #8199A3; font-weight:bold;} /* end */
-.cm-s-juniper-dark span.cm-builtin {color: #E4E4AE;} /* true, false, Types etc */
-.cm-s-juniper-dark span.cm-bracket {color: #0bb; background: none;} /* parens, brackets */
-.cm-s-juniper-dark span.cm-tag {color: #E4E4AE;}
-.cm-s-juniper-dark span.cm-attribute {color: #E4E4AE;}
-.cm-s-juniper-dark span.cm-header {color: #E4E4AE;}
-.cm-s-juniper-dark span.cm-quote {color: #0f0;}
-.cm-s-juniper-dark span.cm-hr {color: #999;}
-.cm-s-juniper-dark span.cm-link {color: #00f;}
-.cm-s-juniper-dark span.cm-symbol {color: #E4E4AE; }
- 
-.cm-s-juniper-dark span.cm-bracket0, .cm-s-juniper-dark span.cm-bracket-mismatched { color:#f88; background:#733; }
-.cm-s-juniper-dark span.CodeMirror-searching { background: #aaa; color:black; }
-.cm-s-juniper-dark span.CodeMirror-searching-active { background: #afa; color:black; }
-.cm-s-juniper-dark div.CodeMirror-selected {background: #345 !important;}
-.cm-s-juniper-dark div.CodeMirror-cursor {border-left: 1px solid white;}
-.cm-s-juniper-dark .CodeMirror-activeline-background { background: #234; }
-.cm-s-juniper-dark .CodeMirror-matchingbracket {
-	font-weight: bold;
-	color: #0ee !important;
+/*defs*/
+/* if, while... */
+/* function definition */
+/* function calls */
+/* comment */
+/* string */
+/* true, false, Types etc */
+/* parens, brackets */
+#multi.theme-juniper-dark .content {
+  background: #172734;
 }
-.cm-s-juniper-dark .CodeMirror-nonmatchingbracket {
-	font-weight: bold;
-	text-decoration: line-through;
-	color: #f88 !important;
-	/*background: #900 !important;*/
-}
-.cm-s-juniper-dark .cm-searching { background:#5f5f5f; border-radius:0px; color:#eee !important; }
-.cm-s-juniper-dark .searching-current { background:#13879C; color:#BFFCFF !important; }
- 
-/* Light Table stuff */
 
+#multi.theme-juniper-dark .list .active, #multi.theme-juniper-dark .list li:hover {
+  background: #172734;
+  color: #eee;
+}
+
+#multi.theme-juniper-dark .list .dirty {
+  color: #f50;
+}
+
+.cm-s-juniper-dark {
+  background: #172734;
+  color: #eee;
+}
+
+.cm-s-juniper-dark span.cm-keyword {
+  color: #8199A3;
+  font-weight: bold;
+}
+
+/* if, while... */
+.cm-s-juniper-dark span.cm-atom {
+  color: #5B90D4;
+}
+
+.cm-s-juniper-dark span.cm-number {
+  color: #009999;
+}
+
+.cm-s-juniper-dark span.cm-def {
+  color: #FC9906;
+  font-weight: bold;
+}
+
+/* function definition */
+.cm-s-juniper-dark span.cm-variable {
+  color: #eee;
+}
+
+.cm-s-juniper-dark span.cm-variable-2 {
+  color: #5B90D4;
+  font-weight: bold;
+}
+
+/* function calls */
+.cm-s-juniper-dark span.cm-variable-3 {
+  color: #5B90D4;
+}
+
+.cm-s-juniper-dark span.cm-property {
+  color: #eee;
+}
+
+.cm-s-juniper-dark span.cm-operator {
+  color: #5B90D4;
+  font-weight: bold;
+}
+
+/* operators, ., :, = */
+.cm-s-juniper-dark span.cm-comment {
+  color: #999;
+  font-style: italic;
+}
+
+/* comment */
+.cm-s-juniper-dark span.cm-string {
+  color: #62C610;
+}
+
+.cm-s-juniper-dark span.cm-string-2 {
+  color: #62C610;
+}
+
+.cm-s-juniper-dark span.cm-meta {
+  color: #FC9906;
+  font-weight: bold;
+}
+
+/* @macros */
+.cm-s-juniper-dark span.cm-error {
+  color: #f55;
+  background: #522;
+}
+
+.cm-s-juniper-dark span.cm-qualifier {
+  color: #8199A3;
+  font-weight: bold;
+}
+
+/* end */
+.cm-s-juniper-dark span.cm-builtin {
+  color: #E4E4AE;
+}
+
+/* true, false, Types etc */
+.cm-s-juniper-dark span.cm-bracket {
+  color: #0bb;
+  background: none;
+}
+
+/* parens, brackets */
+.cm-s-juniper-dark span.cm-tag {
+  color: #E4E4AE;
+}
+
+.cm-s-juniper-dark span.cm-attribute {
+  color: #E4E4AE;
+}
+
+.cm-s-juniper-dark span.cm-header {
+  color: #E4E4AE;
+}
+
+.cm-s-juniper-dark span.cm-quote {
+  color: #0f0;
+}
+
+.cm-s-juniper-dark span.cm-hr {
+  color: #999;
+}
+
+.cm-s-juniper-dark span.cm-link {
+  color: #00f;
+}
+
+.cm-s-juniper-dark span.cm-symbol {
+  color: #E4E4AE;
+}
+
+.cm-s-juniper-dark span.cm-bracket0, .cm-s-juniper-dark span.cm-bracket-mismatched {
+  color: #f88;
+  background: #733;
+}
+
+.cm-s-juniper-dark span.CodeMirror-searching {
+  background: #aaa;
+  color: black;
+}
+
+.cm-s-juniper-dark span.CodeMirror-searching-active {
+  background: #afa;
+  color: black;
+}
+
+.cm-s-juniper-dark div.CodeMirror-selected {
+  background: #345 !important;
+}
+
+.cm-s-juniper-dark div.CodeMirror-cursor {
+  border-left: 1px solid white;
+}
+
+.cm-s-juniper-dark .CodeMirror-activeline-background {
+  background: #234;
+}
+
+.cm-s-juniper-dark .CodeMirror-matchingbracket {
+  font-weight: bold;
+  color: #0ee !important;
+}
+
+.cm-s-juniper-dark .CodeMirror-nonmatchingbracket {
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #f88 !important;
+}
+
+.cm-s-juniper-dark .cm-searching {
+  background: #5f5f5f;
+  border-radius: 0px;
+  color: #eee !important;
+}
+
+.cm-s-juniper-dark .searching-current {
+  background: #13879C;
+  color: #BFFCFF !important;
+}
+
+/* Light Table stuff */
 .julia {
-	font-family: inherit !important;
-	max-width: inherit !important;
+  font-family: inherit !important;
+  max-width: inherit !important;
 }
- 
+
 .theme-juniper-dark .inline-result {
-	background: #2D4050;
-	color: #aaa;
-	border-radius: 10px;
+  background: #2D4050;
+  color: #bbb;
+  border-radius: 10px;
 }
- 
+
 .theme-juniper-dark .underline-result {
-	background: #082434;
-	padding: 0 0 0 10px;
-	color: #eee;
-	border-top: 1px solid #777;
-	border-bottom: 1px solid #777;
-	margin: 8px 0 8px 0;
+  background: #082434;
+  padding: 0 0 0 10px;
+  color: #bbb;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  margin: 8px 0 8px 0;
 }
- 
+
 .theme-juniper-dark .inline-doc {
-	padding: 0 0 0 10px;
-	margin: 8px 0 8px 0;
-	background: #082434;
-	color: #eee;
+  padding: 0 0 0 10px;
+  margin: 8px 0 8px 0;
+  background: #082434;
+  color: #bbb;
 }
- 
+
 .theme-juniper-dark .inline-exception {
-	max-width: 101%;
-	border-top: 1px solid #777;
-	border-bottom: 1px solid #777;
-	margin: 8px 0 8px -10px !important;
-	background: #522;
-	color: #eee;
-	margin: 8px 0 8px 0;
-	padding: 0 0 0 10px;
+  max-width: 101%;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  margin: 8px 0 8px -10px !important;
+  background: #522;
+  color: #bbb;
+  margin: 8px 0 8px 0;
+  padding: 0 0 0 10px;
 }
- 
-.theme-juniper-dark  .inline-exception > div{
-	max-width: inherit !important;
-	background-color: #522;
+
+.theme-juniper-dark .inline-exception > div {
+  max-width: inherit !important;
+  background-color: #522;
 }
- 
+
 .theme-juniper-dark .inline-doc pre {
-	padding: 0 0 0 10px;
-	margin: 8px 0 8px 0;
-	color: #eee;
+  padding: 0 0 0 10px;
+  margin: 8px 0 8px 0;
+  color: #bbb;
 }

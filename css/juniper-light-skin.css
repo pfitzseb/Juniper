@@ -24,7 +24,7 @@ a {
 
 input {
   color: #353;
-  background: #f0f0f0;
+  background: #eee;
 }
 
 ::-webkit-scrollbar {
@@ -323,7 +323,7 @@ input {
 
 .filter-list .selected, .filter-list li:hover {
   color: #353;
-  background: #f0f0f0;
+  background: #eee;
 }
 
 .filter-list .selected em, .filter-list li:hover em {
@@ -342,7 +342,7 @@ input {
 
 #left-bar .workspace ul.buttons li:hover:not(.sep) {
   color: #353;
-  background: #f0f0f0;
+  background: #eee;
 }
 
 #left-bar .workspace li:hover > div > p {
@@ -350,7 +350,7 @@ input {
 }
 
 #left-bar .workspace li p:hover {
-  background: #f0f0f0;
+  background: #eee;
   color: #353;
 }
 
@@ -360,7 +360,7 @@ input {
 
 #left-bar .workspace .recent > div > ul > li:hover {
   border-color: #888;
-  background: #f0f0f0;
+  background: #eee;
   color: #353;
 }
 
@@ -369,7 +369,7 @@ input {
 }
 
 #left-bar .workspace .recent h2:hover {
-  background: #f0f0f0;
+  background: #eee;
   color: #353;
 }
 
@@ -378,12 +378,12 @@ input {
 }
 
 #right-bar .command h2:hover {
-  background: #f0f0f0;
+  background: #eee;
   color: #353;
 }
 
 #right-bar .command input {
-  background: #f0f0f0;
+  background: #eee;
   color: #353;
 }
 
@@ -413,12 +413,12 @@ input {
 
 #right-bar .filter-list .selected, #right-bar .filter-list .selected h2, #right-bar .filter-list li:hover {
   color: #353;
-  background: #f0f0f0;
+  background: #eee;
 }
 
 #right-bar .filter-list input {
   border: 0px solid #888;
-  background: #f0f0f0;
+  background: #eee;
 }
 
 #right-bar .navigate .filter-list .selected p {
@@ -447,7 +447,7 @@ input {
 }
 
 #right-bar .docs-search .types li {
-  background: #f0f0f0;
+  background: #eee;
   color: #353;
 }
 
@@ -489,7 +489,7 @@ input {
 }
 
 #right-bar .clients .list .active {
-  background: #f0f0f0;
+  background: #eee;
   color: inherit;
   border-color: #888;
 }
@@ -538,7 +538,7 @@ input {
 }
 
 #right-bar .clients .connector li:hover {
-  background: #f0f0f0;
+  background: #eee;
   color: #333;
   border-color: #888;
 }
@@ -687,7 +687,7 @@ input {
 }
 
 .search-results input {
-  background: #f0f0f0;
+  background: #eee;
 }
 
 .search-results button {
@@ -844,12 +844,12 @@ input {
 }
 
 .plugin-manager input {
-  background: #f0f0f0;
+  background: #eee;
   -webkit-flex: 1;
 }
 
 .plugin-manager button {
-  background: #f0f0f0;
+  background: #eee;
 }
 
 .plugin-manager .install {
@@ -1015,8 +1015,8 @@ input {
   top: 29px;
   left: 0;
   right: 0;
-  padding: 5px;
-  padding-bottom: 5px;
+  border: 5px solid #f0f0f0;
+  padding: 0;
 }
 
 #left-bar .workspace ul.root {
@@ -1054,12 +1054,12 @@ button {
 }
 
 .CodeMirror div.CodeMirror-cursor {
-  border-left: 1px solid white;
+  border-left: 1px solid black;
 }
 
 /* Shown when moving in bi-directional text */
 .CodeMirror div.CodeMirror-secondarycursor {
-  border-left: 1px solid silver;
+  border-left: 1px solid gray;
 }
 
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
@@ -1086,8 +1086,8 @@ button {
   margin: 0;
   padding: 2px;
   border-radius: 2px;
-  border: 1px solid #3b3f41;
-  background: #3b3f41;
+  border: 1px solid #f5f5f5;
+  background: #f5f5f5;
   font-size: 90%;
   font-family: inherit;
   max-height: 20em;
@@ -1105,7 +1105,7 @@ button {
   max-width: 60em;
   overflow: hidden;
   white-space: pre;
-  color: #ccc;
+  color: #333;
   cursor: pointer;
 }
 
@@ -1114,7 +1114,7 @@ button {
 }
 
 .CodeMirror-hints .selected {
-  background: #f0f0f0;
+  background: #eee;
   color: #353;
 }
 

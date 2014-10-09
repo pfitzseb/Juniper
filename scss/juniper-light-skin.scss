@@ -15,7 +15,7 @@ $hidden-fg: #bbb;
 $hidden-bg: #404040;
 $inactive-bg: #2C2F30;
 
-$highlight-bg: #f0f0f0;
+$highlight-bg: #eee;
 $highlight-fg: #353;
 
 $dark-highlight-bg: #666;
@@ -26,7 +26,7 @@ $button-fg: #f4f4f4;
 $button-active-bg: #ccc;
 $button-active-fg: #555;
 
-$pane-bg: #3b3f41;
+$pane-bg: #f5f5f5;
 $pane-scrollbar: #7c7c7c;
 $dark-pane-bg: #1c1f26;
 $dark-pane-border: #606060;
@@ -987,8 +987,8 @@ input {
 	top: 29px;
 	left: 0;
 	right: 0;
-	padding: 5px;
-	padding-bottom: 5px;
+	border: 5px solid $multi;
+	padding: 0;
 }
 
 #left-bar .workspace ul.root {
@@ -1022,11 +1022,11 @@ button {
 }
 
 .CodeMirror div.CodeMirror-cursor {
-	border-left: 1px solid white;
+	border-left: 1px solid black;
 }
 /* Shown when moving in bi-directional text */
 .CodeMirror div.CodeMirror-secondarycursor {
-	border-left: 1px solid silver;
+	border-left: 1px solid gray;
 }
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
 	width: auto;
@@ -1067,7 +1067,7 @@ button {
 	max-width: 60em;
 	overflow: hidden;
 	white-space: pre;
-	color: #ccc;
+	color: $fg;
 	cursor: pointer;
 }
 .CodeMirror-hints input {
