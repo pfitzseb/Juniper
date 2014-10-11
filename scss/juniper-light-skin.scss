@@ -6,11 +6,11 @@ $border: #EBEBEB;
 $shadow: black;
 
 $scrollbar: #D5D5D5;
-$placeholder-fg: #aaa;
+$placeholder-fg: #999;
 $dim-fg: #bbb;
-$bright-fg: #aaa;
+$bright-fg: #999;
 $blinding-fg: #fff;
-$hidden-fg: #bbb;
+$hidden-fg: #999;
 
 $hidden-bg: #404040;
 $inactive-bg: #2C2F30;
@@ -22,7 +22,7 @@ $dark-highlight-bg: #666;
 $medium-highlight-bg: #999;
 
 $button-bg: #616161;
-$button-fg: #f4f4f4;
+$button-fg: #777;
 $button-active-bg: #ccc;
 $button-active-fg: #555;
 
@@ -45,8 +45,10 @@ $result-fg: #006EC7;
 
 $overlay-dimmer: rgba(0,0,0,0.5);
 
+/* popups too: */
 $accent-foreground: #006EC7;
-$accent-background: #505D6B;
+$accent-background: #ffffff;
+
 $light-accent-background: #18B1CC;
 $light-accent-foreground: #CCFCFF;
 $dark-accent-background: #505D6B;
@@ -56,7 +58,7 @@ $secondary-accent-bg: #D9EEEE;
 $secondary-accent-dim-fg: #006EC7;
 $secondary-accent-desat-fg: $fg;
 
-$tertiary-accent-fg: #DFC7FF;
+$tertiary-accent-fg: #F3EAFF;
 $tertiary-accent-bg: #5E3870;
 
 // css
@@ -469,7 +471,7 @@ input {
 }
 
 #right-bar .command .filter-list p.binding {
-	color: $fg;
+	color: $bright-fg;
 }
 
 #right-bar .command .filter-list .selected p.binding {
@@ -831,7 +833,7 @@ input {
 	border-top: 1px solid $border;
 }
 .plugin-manager > ul > li:hover {
-	background: $hidden-bg;
+	background: $highlight-bg;
 }
 .plugin-manager .tabs {
 	margin-bottom: 15px;
@@ -915,26 +917,27 @@ input {
 	content: "install";
 	 }
 .plugin-manager .source {
-	color: transparent;
+	color: $bright-fg;
 	position: absolute;
 	height: 25px;
 	width: 5px;
 	top: 25px;
 	right: 0;
-	background: $accent-foreground;
+	background: $dark-accent-background;
 	overflow: hidden;
 	-webkit-transition: width 0.1s ease-in-out, right 0.1s ease-in-out;
 }
 .plugin-manager .source a {
-	color: transparent;
+	color: $bright-fg;
 	padding: 4px 8px;
 	display: inline-block;
 	width: 100%;}
+	
 .plugin-manager li:hover .source {
 	width: 70px;
 }
 .plugin-manager li:hover .source a {
-	color: $accent-background;
+	color: $bright-fg !important;
 }
 
 /**********************************************************
@@ -976,7 +979,7 @@ input {
 	color: #fb0;
 }
 .workspace .buttons {
-	//display: none;
+	display: none;
 }
 
 #side .content{

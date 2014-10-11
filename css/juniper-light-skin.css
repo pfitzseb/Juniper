@@ -1,3 +1,4 @@
+/* popups too: */
 html {
   background: #fff;
 }
@@ -14,7 +15,7 @@ a {
 
 .button, button {
   background: #616161;
-  color: #f4f4f4;
+  color: #777;
 }
 
 .button:hover, .button:focus, button:hover, button:focus, button.active {
@@ -45,7 +46,7 @@ input {
 }
 
 ::-webkit-input-placeholder {
-  color: #aaa;
+  color: #999;
 }
 
 ::-webkit-scrollbar {
@@ -71,7 +72,7 @@ input {
 }
 
 ::selection {
-  background: #aaa;
+  background: #999;
 }
 
 .inline-result {
@@ -106,7 +107,7 @@ input {
 }
 
 .inspector-object h2:before {
-  color: #bbb;
+  color: #999;
 }
 
 .inspector-object em {
@@ -220,7 +221,7 @@ input {
 }
 
 .console li .line {
-  color: #bbb;
+  color: #999;
   padding-left: 5px;
 }
 
@@ -230,12 +231,12 @@ input {
 }
 
 #instarepl .livetoggler {
-  background: #505D6B;
+  background: #ffffff;
   color: #006EC7;
 }
 
 #instarepl .livetoggler.off {
-  color: #aaa;
+  color: #999;
   background: #fff;
 }
 
@@ -264,7 +265,7 @@ input {
 }
 
 .popup > div > div {
-  background: #505D6B;
+  background: #ffffff;
   color: #006EC7;
 }
 
@@ -293,7 +294,7 @@ input {
 
 .popup .button:hover, .popup .button.active {
   background: #006EC7 !important;
-  color: #505D6B;
+  color: #ffffff;
 }
 
 .popup ::-webkit-scrollbar-thumb {
@@ -310,12 +311,12 @@ input {
 }
 
 #version-info .info dt {
-  color: #bbb;
+  color: #999;
 }
 
 #version-info .button {
   background: #616161;
-  color: #f4f4f4;
+  color: #777;
   border: none;
 }
 
@@ -403,7 +404,7 @@ input {
 }
 
 #right-bar .command .filter-list p {
-  color: #aaa;
+  color: #999;
 }
 
 #right-bar .command .filter-list .selected p {
@@ -411,7 +412,7 @@ input {
 }
 
 #right-bar .command .filter-list p.binding {
-  color: #333;
+  color: #999;
 }
 
 #right-bar .command .filter-list .selected p.binding {
@@ -419,7 +420,7 @@ input {
 }
 
 #right-bar .filter-list h2 {
-  color: #aaa;
+  color: #999;
 }
 
 #right-bar .filter-list .selected, #right-bar .filter-list .selected h2, #right-bar .filter-list li:hover {
@@ -445,7 +446,7 @@ input {
 }
 
 #right-bar .docs-search h3 {
-  color: #aaa;
+  color: #999;
 }
 
 #right-bar .docs-search .types > span {
@@ -473,7 +474,7 @@ input {
 
 #right-bar .clients .button {
   background: #616161;
-  color: #f4f4f4;
+  color: #777;
 }
 
 #right-bar .clients .button:hover {
@@ -520,7 +521,7 @@ input {
 
 #right-bar .clients .list .active .button:hover {
   background: #006EC7 !important;
-  color: #505D6B;
+  color: #ffffff;
 }
 
 #right-bar .clients .connector li {
@@ -555,7 +556,7 @@ input {
 }
 
 #status {
-  color: #bbb;
+  color: #999;
 }
 
 #status .console-toggle {
@@ -577,7 +578,7 @@ input {
 }
 
 #status .console-toggle.dirty {
-  background: #505D6B;
+  background: #ffffff;
   color: #006EC7;
   display: inline-block;
 }
@@ -610,7 +611,7 @@ input {
 }
 
 #find-bar ::-webkit-input-placeholder {
-  color: #bbb;
+  color: #999;
 }
 
 #find-bar button {
@@ -665,7 +666,7 @@ input {
 }
 
 .search-results .path, .search-results .line {
-  color: #bbb;
+  color: #999;
 }
 
 .search-results .line {
@@ -673,7 +674,7 @@ input {
 }
 
 .search-results .entry {
-  color: #aaa;
+  color: #999;
 }
 
 .search-results .entry em {
@@ -805,11 +806,11 @@ input {
 
 .plugin-manager .version {
   margin-left: 10px;
-  color: #bbb;
+  color: #999;
 }
 
 .plugin-manager h3 {
-  color: #bbb;
+  color: #999;
 }
 
 .plugin-manager h3:before {
@@ -842,7 +843,7 @@ input {
 }
 
 .plugin-manager > ul > li:hover {
-  background: #404040;
+  background: #eee;
 }
 
 .plugin-manager .tabs {
@@ -880,7 +881,7 @@ input {
 .plugin-manager .uninstall {
   box-sizing: border-box;
   color: #5E3870;
-  background: #DFC7FF;
+  background: #F3EAFF;
   display: inline-block;
   height: 25px;
   position: absolute;
@@ -939,19 +940,19 @@ input {
 }
 
 .plugin-manager .source {
-  color: transparent;
+  color: #999;
   position: absolute;
   height: 25px;
   width: 5px;
   top: 25px;
   right: 0;
-  background: #006EC7;
+  background: #505D6B;
   overflow: hidden;
   -webkit-transition: width 0.1s ease-in-out, right 0.1s ease-in-out;
 }
 
 .plugin-manager .source a {
-  color: transparent;
+  color: #999;
   padding: 4px 8px;
   display: inline-block;
   width: 100%;
@@ -962,7 +963,7 @@ input {
 }
 
 .plugin-manager li:hover .source a {
-  color: #505D6B;
+  color: #999 !important;
 }
 
 /**********************************************************
@@ -1003,6 +1004,10 @@ input {
 .timed-result {
   background: #741;
   color: #fb0;
+}
+
+.workspace .buttons {
+  display: none;
 }
 
 #side .content {
