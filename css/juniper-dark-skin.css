@@ -958,14 +958,14 @@ input {
 * Theme specific
 ***********************************************************/
 .cm-visible-space {
-  background: url("../img/visible-space11.png");
+  background: url("../img/space-light.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .cm-visible-tab {
-  background: url("../img/visible-tab7.png");
+  background: url("../img/tab-light.png");
   background-size: 100% 1em;
   background-position: center;
   background-repeat: no-repeat;
