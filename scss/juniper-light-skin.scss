@@ -1,4 +1,4 @@
-// Defs
+/*Defs */
 $bg: #fff;
 $fg: #333;
 $multi: #f0f0f0;
@@ -16,7 +16,7 @@ $hidden-bg: #404040;
 $inactive-bg: #2C2F30;
 
 $highlight-bg: #eee;
-$highlight-fg: #353;
+$highlight-fg: #113;
 
 $dark-highlight-bg: #666;
 $medium-highlight-bg: #999;
@@ -26,7 +26,8 @@ $button-fg: #777;
 $button-active-bg: #ccc;
 $button-active-fg: #555;
 
-$pane-bg: #f5f5f5;
+/* for autocomplete */
+$pane-bg: #f7f7f7;
 $pane-scrollbar: #7c7c7c;
 $dark-pane-bg: #1c1f26;
 $dark-pane-border: #606060;
@@ -1042,10 +1043,12 @@ button {
 .CodeMirror div.CodeMirror-cursor {
 	border-left: 1px solid black;
 }
+
 /* Shown when moving in bi-directional text */
 .CodeMirror div.CodeMirror-secondarycursor {
 	border-left: 1px solid gray;
 }
+
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
 	width: auto;
 	border: none !important;
@@ -1056,44 +1059,53 @@ button {
 	background: $multi;
 	border-right: 1px solid #ccc;
 }
+
 .CodeMirror-hints.empty {
 	display: none;
 }
+
 .CodeMirror-hints {
 	position: absolute;
 	z-index: 1000000000000000;
 	overflow: hidden;
 	list-style: none;
-	 margin: 0;
+	margin: 0;
 	padding: 2px;
-	 border-radius: 2px;
+	border-radius: 2px;
 	border: 1px solid $pane-bg;
-	 background: $pane-bg;
+	background: $pane-bg;
 	font-size: 90%;
 	font-family: inherit;
-	 max-height: 20em;
+	max-height: 20em;
 }
+
 .CodeMirror-hints ul {
 	overflow-y: auto;
 	max-height: 20em;
 }
+
 .CodeMirror-hints ul li {
 	margin: 0;
 	padding: 0 4px;
-	border-radius: 2px;
+	border-radius: 0;
 	max-width: 60em;
 	overflow: hidden;
 	white-space: pre;
 	color: $fg;
 	cursor: pointer;
+	border-left: 1px solid $pane-bg;
 }
+
 .CodeMirror-hints input {
 	display: none;
 }
+
 .CodeMirror-hints .selected {
 	background: $highlight-bg;
 	color: $highlight-fg;
+	border-left: 1px solid $accent-foreground;
 }
+
 .CodeMirror-hints ul::-webkit-scrollbar-thumb {
 	background: $scrollbar;
 	border-color: $scrollbar;

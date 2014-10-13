@@ -1,3 +1,5 @@
+/*Defs */
+/* for autocomplete */
 /* popups too: */
 html {
   background: #fff;
@@ -24,7 +26,7 @@ a {
 }
 
 input {
-  color: #353;
+  color: #113;
   background: #eee;
 }
 
@@ -150,7 +152,7 @@ input {
 
 #multi .list .active, #multi .list li:hover {
   background: #f0f0f0;
-  color: #353;
+  color: #113;
 }
 
 #multi .list .dirty {
@@ -334,7 +336,7 @@ input {
 }
 
 .filter-list .selected, .filter-list li:hover {
-  color: #353;
+  color: #113;
   background: #eee;
 }
 
@@ -353,17 +355,17 @@ input {
 }
 
 #left-bar .workspace ul.buttons li:hover:not(.sep) {
-  color: #353;
+  color: #113;
   background: #eee;
 }
 
 #left-bar .workspace li:hover > div > p {
-  color: #353;
+  color: #113;
 }
 
 #left-bar .workspace li p:hover {
   background: #eee;
-  color: #353;
+  color: #113;
 }
 
 #left-bar .workspace .recent > div > ul > li + li {
@@ -373,7 +375,7 @@ input {
 #left-bar .workspace .recent > div > ul > li:hover {
   border-color: #888;
   background: #eee;
-  color: #353;
+  color: #113;
 }
 
 #left-bar .workspace .recent > div > ul > li:hover + li {
@@ -382,7 +384,7 @@ input {
 
 #left-bar .workspace .recent h2:hover {
   background: #eee;
-  color: #353;
+  color: #113;
 }
 
 #right-bar .content {
@@ -391,12 +393,12 @@ input {
 
 #right-bar .command h2:hover {
   background: #eee;
-  color: #353;
+  color: #113;
 }
 
 #right-bar .command input {
   background: #eee;
-  color: #353;
+  color: #113;
 }
 
 #right-bar .command li + li {
@@ -408,7 +410,7 @@ input {
 }
 
 #right-bar .command .filter-list .selected p {
-  color: #353;
+  color: #113;
 }
 
 #right-bar .command .filter-list p.binding {
@@ -424,7 +426,7 @@ input {
 }
 
 #right-bar .filter-list .selected, #right-bar .filter-list .selected h2, #right-bar .filter-list li:hover {
-  color: #353;
+  color: #113;
   background: #eee;
 }
 
@@ -460,7 +462,7 @@ input {
 
 #right-bar .docs-search .types li {
   background: #eee;
-  color: #353;
+  color: #113;
 }
 
 #right-bar .docs-search .types li:hover {
@@ -511,7 +513,7 @@ input {
 }
 
 #right-bar .clients .list .active h2 {
-  color: #353;
+  color: #113;
 }
 
 #right-bar .clients .list .active .button {
@@ -542,11 +544,11 @@ input {
 }
 
 #right-bar .clients .connector li h2 {
-  color: #353;
+  color: #113;
 }
 
 #right-bar .clients .connector li:hover h2 {
-  color: #353;
+  color: #113;
 }
 
 #right-bar .clients .connector li:hover {
@@ -574,7 +576,7 @@ input {
 
 #status .console-toggle:hover {
   background: #666;
-  color: #353;
+  color: #113;
 }
 
 #status .console-toggle.dirty {
@@ -1105,8 +1107,8 @@ button {
   margin: 0;
   padding: 2px;
   border-radius: 2px;
-  border: 1px solid #f5f5f5;
-  background: #f5f5f5;
+  border: 1px solid #f7f7f7;
+  background: #f7f7f7;
   font-size: 90%;
   font-family: inherit;
   max-height: 20em;
@@ -1120,12 +1122,13 @@ button {
 .CodeMirror-hints ul li {
   margin: 0;
   padding: 0 4px;
-  border-radius: 2px;
+  border-radius: 0;
   max-width: 60em;
   overflow: hidden;
   white-space: pre;
   color: #333;
   cursor: pointer;
+  border-left: 1px solid #f7f7f7;
 }
 
 .CodeMirror-hints input {
@@ -1134,7 +1137,8 @@ button {
 
 .CodeMirror-hints .selected {
   background: #eee;
-  color: #353;
+  color: #113;
+  border-left: 1px solid #006EC7;
 }
 
 .CodeMirror-hints ul::-webkit-scrollbar-thumb {
