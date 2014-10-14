@@ -7,5 +7,6 @@ If you are interested in an IDE for Julia, take a look at [Juno](http://junolab.
 
 ![Juniper Light](screens/screen-light.png)
 
+If there's anything annoying (especially with the light skin), please open an issue - I probably missed changing some part of LT somewhere.
 =======
 Based upon the [new-dark skin](https://github.com/LightTable/LightTable/blob/master/deploy/core/css/skins/new-dark.css).

@@ -2,8 +2,8 @@
   "name": "Juniper",
   "author": "Varanas",
   "version": "0.1.0",
-  "source": "",
-  "desc": "berries! :)",
+  "source": "https://github.com/Varanas/Juniper",
+  "desc": "Skin and theme (dark and light) - optimized for Julia.",
   "dependencies": {
   },
   "behaviors": "juniper.behaviors"
