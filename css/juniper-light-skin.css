@@ -1062,6 +1062,14 @@ input {
   padding-bottom: 10px;
 }
 
+.horizontal-grip {
+  cursor: ns-resize;
+}
+
+.vertical-grip {
+  cursor: ew-resize;
+}
+
 button {
   border-radius: 0;
 }
