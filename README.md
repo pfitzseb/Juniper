@@ -1,6 +1,6 @@
 Juniper
 =======
-Provides two new skins and matching themes for Light Table.
+Provides two new skins and a light theme for Light Table.
 
 The themes are optimized for [Julia](http://julialang.org), but can be used with any language.
 If you are interested in an IDE for Julia, take a look at [Juno](http://junolab.org/docs/installing.html).
