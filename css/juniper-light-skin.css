@@ -16,7 +16,7 @@ a {
 }
 
 .button, button {
-  background: #616161;
+  background: #ddd;
   color: #777;
 }
 
@@ -48,7 +48,7 @@ input {
 }
 
 ::-webkit-input-placeholder {
-  color: #999;
+  color: #ddd;
 }
 
 ::-webkit-scrollbar {
@@ -74,7 +74,11 @@ input {
 }
 
 ::selection {
-  background: #999;
+  background: #ddd;
+}
+
+::-webkit-input-placeholder {
+  color: #444;
 }
 
 .inline-result {
@@ -317,7 +321,7 @@ input {
 }
 
 #version-info .button {
-  background: #616161;
+  background: #ddd;
   color: #777;
   border: none;
 }
@@ -448,7 +452,7 @@ input {
 }
 
 #right-bar .docs-search h3 {
-  color: #999;
+  color: #ddd;
 }
 
 #right-bar .docs-search .types > span {
@@ -475,7 +479,7 @@ input {
 }
 
 #right-bar .clients .button {
-  background: #616161;
+  background: #ddd;
   color: #777;
 }
 
@@ -625,7 +629,7 @@ input {
 }
 
 #browser input {
-  background: #404040;
+  background: #eee;
   color: #333;
 }
 
@@ -676,7 +680,7 @@ input {
 }
 
 .search-results .entry {
-  color: #999;
+  color: #ddd;
 }
 
 .search-results .entry em {
@@ -742,6 +746,10 @@ input {
   white-space: pre;
 }
 
+.behavior-helper-line {
+  z-index: 5 !important;
+}
+
 .behavior-helper-result {
   white-space: nowrap;
   display: inline-block;
@@ -752,12 +760,15 @@ input {
   padding-left: 20px;
   box-sizing: border-box;
   background: none;
+  height: 10px;
+  overflow: visible;
   color: #0063B3;
 }
 
 .behavior-helper-result div {
   white-space: nowrap;
   width: -webkit-fit-content;
+  display: inline-block;
   background: #D9EEEE;
   padding: 0px 5px;
   border-radius: 0px;
@@ -769,8 +780,12 @@ input {
   padding: 0px !important;
 }
 
+.behavior-helper-result div > div {
+  margin-left: 10px;
+}
+
 .behavior-helper-result h2 {
-  display: block;
+  display: inline-block;
   width: -webkit-fit-content;
   white-space: nowrap;
 }
@@ -790,8 +805,8 @@ input {
 }
 
 .behavior-helper-result .active {
-  background: #D9EEEE;
-  color: #0063B3;
+  background: #0063B3;
+  color: #D9EEEE;
   border-radius: 0px;
   display: inline-block;
 }

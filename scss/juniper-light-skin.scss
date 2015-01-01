@@ -6,7 +6,7 @@ $border: #EBEBEB;
 $shadow: black;
 
 $scrollbar: #D5D5D5;
-$placeholder-fg: #999;
+$placeholder-fg: #ddd;
 $dim-fg: #bbb;
 $bright-fg: #999;
 $blinding-fg: #fff;
@@ -21,7 +21,7 @@ $highlight-fg: #113;
 $dark-highlight-bg: #666;
 $medium-highlight-bg: #999;
 
-$button-bg: #616161;
+$button-bg: #ddd;
 $button-fg: #777;
 $button-active-bg: #ccc;
 $button-active-fg: #555;
@@ -137,6 +137,10 @@ input {
 
 ::selection {
 	background: $placeholder-fg;
+}
+
+::-webkit-input-placeholder { 
+  color: #444;
 }
 
 .inline-result {
@@ -648,7 +652,7 @@ input {
 }
 
 #browser input {
-	background: $hidden-bg;
+	background: $highlight-bg;
 	color: $fg;
 }
 #browser button {
@@ -747,6 +751,10 @@ input {
 	white-space: pre;
 }
 
+.behavior-helper-line {
+	z-index: 5 !important;
+}
+
 .behavior-helper-result {
 	white-space: nowrap;
 	display: inline-block;
@@ -757,11 +765,14 @@ input {
 	padding-left: 20px;
 	box-sizing: border-box;
 	background: none;
+	height: 10px;
+	overflow:visible;
 	color: $usage-fg;
 }
 .behavior-helper-result div {
 	white-space: nowrap;
 	width: -webkit-fit-content;
+	display: inline-block;
 	background: $usage-bg;
 	padding: 0px 5px;
 	border-radius: 0px;
@@ -771,8 +782,13 @@ input {
 	border-radius: 0px;
 	padding: 0px !important;
 }
+
+.behavior-helper-result div > div {
+	margin-left: 10px;
+}
+
 .behavior-helper-result h2 {
-	display: block;
+	display: inline-block;
 	width: -webkit-fit-content;
 	white-space: nowrap;
 }
@@ -789,8 +805,8 @@ input {
 	margin: 0 5px;
 }
 .behavior-helper-result .active {
-	background: $usage-bg;
-	color: $usage-fg;
+	background: $usage-fg;
+	color: $usage-bg;
 	border-radius: 0px;
 	display: inline-block;
 }
