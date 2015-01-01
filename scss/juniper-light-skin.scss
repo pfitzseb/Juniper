@@ -111,7 +111,8 @@ input {
 }
 
 ::-webkit-input-placeholder {
-	color: $placeholder-fg;
+	color: $highlight-fg;
+	opacity: 0.3;
 }
 
 ::-webkit-scrollbar {
@@ -638,7 +639,8 @@ input {
 	border-left: 2px solid $bg;
 }
 #find-bar ::-webkit-input-placeholder {
-	color: $hidden-fg;
+	color: $highlight-fg;
+	opacity: 0.3;
 }
 #find-bar button {
 	background: $bg;
@@ -815,11 +817,14 @@ input {
 	margin-left: 5px;
 	border: none;
 }
+.plugin-manager {
+	background-color: $bg;
+}
 
 .plugin-manager .version {
 	margin-left: 10px;
 	color: $hidden-fg;
-	 }
+}
 .plugin-manager h3 {
 	color: $hidden-fg;
 }
@@ -835,13 +840,13 @@ input {
 }
 .plugin-manager li.has-update .version {
 	color: $error-fg;
-	 }
+}
 .plugin-manager li.has-update .version {
 	color: $error-fg;
-	 }
+}
 .plugin-manager li.has-update h1 {
 	color: $error-fg;
-	 }
+}
 .plugin-manager li + li {
 	border-top: 1px solid $border;
 }
@@ -859,6 +864,7 @@ input {
 .plugin-manager input {
 	background: $highlight-bg;
 	-webkit-flex: 1;
+    border-left: 1px solid $button-active-bg;
 }
 .plugin-manager button {
 	background: $highlight-bg;
@@ -938,7 +944,7 @@ input {
 	right: 0;
 	background: $dark-accent-background;
 	overflow: hidden;
-	-webkit-transition: width 0.1s ease-in-out, right 0.1s ease-in-out;
+	-webkit-transition: width 0.1s ease-in-out, right 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 .plugin-manager .source a {
 	color: $bright-fg;
@@ -950,7 +956,7 @@ input {
 	width: 70px;
 }
 .plugin-manager li:hover .source a {
-	color: $bright-fg !important;
+	color: $blinding-fg !important;
 }
 
 /**********************************************************

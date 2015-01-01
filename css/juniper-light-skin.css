@@ -48,7 +48,8 @@ input {
 }
 
 ::-webkit-input-placeholder {
-  color: #ddd;
+  color: #113;
+  opacity: 0.3;
 }
 
 ::-webkit-scrollbar {
@@ -612,7 +613,8 @@ input {
 }
 
 #find-bar ::-webkit-input-placeholder {
-  color: #999;
+  color: #113;
+  opacity: 0.3;
 }
 
 #find-bar button {
@@ -816,6 +818,10 @@ input {
   border: none;
 }
 
+.plugin-manager {
+  background-color: #fff;
+}
+
 .plugin-manager .version {
   margin-left: 10px;
   color: #999;
@@ -870,6 +876,7 @@ input {
 .plugin-manager input {
   background: #eee;
   -webkit-flex: 1;
+  border-left: 1px solid #ccc;
 }
 
 .plugin-manager button {
@@ -960,7 +967,7 @@ input {
   right: 0;
   background: #505D6B;
   overflow: hidden;
-  -webkit-transition: width 0.1s ease-in-out, right 0.1s ease-in-out;
+  -webkit-transition: width 0.1s ease-in-out, right 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
 .plugin-manager .source a {
@@ -975,7 +982,7 @@ input {
 }
 
 .plugin-manager li:hover .source a {
-  color: #999 !important;
+  color: #fff !important;
 }
 
 /**********************************************************
