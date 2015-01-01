@@ -7,9 +7,13 @@ $def: #F19000; /* function definition */
 $fun: #922E07; /* function calls */
 $comment: #999; /* comment */
 $string: #76A009; /* string */
+$tag: #034ce7;
+$attribute: #b20000;
+$header: #b20000;
 $builtin: #9E9E03; /* true, false, Types etc */
 $paren: #1EB6B6; /* parens, brackets */
-$matching_paren: $paren;
+$matching_paren: #095f72;
+$matching_paren_bg: #e6f8ff;
 $nonmatching_paren: #f88;
 
 $file_changed: #AD0000;
@@ -51,9 +55,9 @@ $exception_bg: #FFC8C8;
 .cm-s-juniper-light span.cm-qualifier {color: $keyword; font-weight:bold;} /* end */
 .cm-s-juniper-light span.cm-builtin {color: $builtin;} /* true, false, Types etc */
 .cm-s-juniper-light span.cm-bracket {color: $paren; background: none;} /* parens, brackets */
-.cm-s-juniper-light span.cm-tag {color: $builtin;}
-.cm-s-juniper-light span.cm-attribute {color: $builtin;}
-.cm-s-juniper-light span.cm-header {color: $builtin;}
+.cm-s-juniper-light span.cm-tag {color: $tag;}
+.cm-s-juniper-light span.cm-attribute {color: $attribute;}
+.cm-s-juniper-light span.cm-header {color: $header;}
 .cm-s-juniper-light span.cm-quote {color: #0f0;}
 .cm-s-juniper-light span.cm-hr {color: $comment;}
 .cm-s-juniper-light span.cm-link {color: #00f;}
@@ -69,6 +73,7 @@ $exception_bg: #FFC8C8;
 .cm-s-juniper-light .CodeMirror-matchingbracket {
 	font-weight: bold;
 	color: $matching_paren !important;
+    background-color: $matching_paren_bg !important;
 }
 .cm-s-juniper-light .CodeMirror-nonmatchingbracket {
 	font-weight: bold;

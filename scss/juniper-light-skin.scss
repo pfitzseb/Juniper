@@ -35,6 +35,7 @@ $pane-border: #888;
 
 $error-bg: #C76C82;
 $error-fg: #FFA6A6;
+$error-fg-console: #d43c21;
 $error-highlight-fg: #FFCDCD;
 $error-border: #aF5D5D;
 
@@ -137,10 +138,6 @@ input {
 
 ::selection {
 	background: $placeholder-fg;
-}
-
-::-webkit-input-placeholder { 
-  color: #444;
 }
 
 .inline-result {
@@ -270,8 +267,7 @@ input {
 }
 
 .console li.error {
-	color: $error-fg;
-	background: $error-bg;
+	color: $error-fg-console;
 	border-color: $bg;
 }
 
@@ -1029,6 +1025,11 @@ input {
 #left-bar .workspace ul.root {
 	top: 0px;
 }
+
+.tree-item p:hover {
+	background-color: $highlight-bg;
+}
+
 #right-bar .filter-list input {
 	padding: 6px 10px;
 	font-size: 10pt;
@@ -1045,7 +1046,7 @@ input {
 }
 
 .horizontal-grip{
-	cursor: ns-resize;
+	cursor: ns-resize !important;
 }
 
 .vertical-grip{

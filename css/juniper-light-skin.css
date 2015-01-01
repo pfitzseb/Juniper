@@ -77,10 +77,6 @@ input {
   background: #ddd;
 }
 
-::-webkit-input-placeholder {
-  color: #444;
-}
-
 .inline-result {
   background: #505D6B;
   color: #006EC7;
@@ -209,8 +205,7 @@ input {
 }
 
 .console li.error {
-  color: #FFA6A6;
-  background: #C76C82;
+  color: #d43c21;
   border-color: #fff;
 }
 
@@ -1060,6 +1055,10 @@ input {
   top: 0px;
 }
 
+.tree-item p:hover {
+  background-color: #eee;
+}
+
 #right-bar .filter-list input {
   padding: 6px 10px;
   font-size: 10pt;
@@ -1078,7 +1077,7 @@ input {
 }
 
 .horizontal-grip {
-  cursor: ns-resize;
+  cursor: ns-resize !important;
 }
 
 .vertical-grip {

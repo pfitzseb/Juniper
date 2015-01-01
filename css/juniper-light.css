@@ -107,15 +107,15 @@
 
 /* parens, brackets */
 .cm-s-juniper-light span.cm-tag {
-  color: #9E9E03;
+  color: #034ce7;
 }
 
 .cm-s-juniper-light span.cm-attribute {
-  color: #9E9E03;
+  color: #b20000;
 }
 
 .cm-s-juniper-light span.cm-header {
-  color: #9E9E03;
+  color: #b20000;
 }
 
 .cm-s-juniper-light span.cm-quote {
@@ -166,7 +166,8 @@
 
 .cm-s-juniper-light .CodeMirror-matchingbracket {
   font-weight: bold;
-  color: #1EB6B6 !important;
+  color: #095f72 !important;
+  background-color: #e6f8ff !important;
 }
 
 .cm-s-juniper-light .CodeMirror-nonmatchingbracket {
