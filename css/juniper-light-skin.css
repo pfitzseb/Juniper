@@ -619,6 +619,8 @@ input {
 
 #find-bar button {
   background: #fff;
+  padding: 7px 10px 6px 10px;
+  border-top: 2px solid #fff;
 }
 
 #find-bar button:hover, #find-bar button:focus, #find-bar button:active, #find-bar button.active {
@@ -677,24 +679,21 @@ input {
 }
 
 .search-results .entry {
-  color: #ddd;
+  color: #333;
 }
 
 .search-results .entry em {
-  color: #fff;
+  color: #006EC7;
 }
 
 .search-results .entry:hover {
-  background: #404040;
-}
-
-.search-results .entry:hover .line {
-  background: #999;
-  color: #fff;
+  background: #eee;
+  color: #113;
 }
 
 .search-results .path {
   color: #006EC7;
+  border-bottom: 1px solid #EBEBEB;
 }
 
 .search-results .file {

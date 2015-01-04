@@ -644,6 +644,8 @@ input {
 }
 #find-bar button {
 	background: $bg;
+    padding: 7px 10px 6px 10px;
+    border-top: 2px solid $bg;
 }
 #find-bar button:hover, #find-bar button:focus, #find-bar button:active, #find-bar button.active {
 	background: $button-active-bg;
@@ -693,20 +695,18 @@ input {
 	color: $secondary-accent-desat-fg;
 }
 .search-results .entry {
-	color: $placeholder-fg;
+	color: $fg;
 }
 .search-results .entry em {
-	color: $blinding-fg;
+	color: $result-fg;
 }
 .search-results .entry:hover {
-	background: $hidden-bg;
-}
-.search-results .entry:hover .line {
-	background: $medium-highlight-bg;
-	color: $bg;
+	background: $highlight-bg;
+    color: $highlight-fg
 }
 .search-results .path {
 	color: $secondary-accent-dim-fg;
+    border-bottom: 1px solid $border;
 }
 .search-results .file {
 	color: $secondary-accent-fg;
@@ -951,7 +951,7 @@ input {
 	padding: 4px 8px;
 	display: inline-block;
 	width: 100%;}
-	
+
 .plugin-manager li:hover .source {
 	width: 70px;
 }
