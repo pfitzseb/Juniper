@@ -1099,7 +1099,7 @@ button {
 }
 
 .CodeMirror pre {
-  padding: 0 0 0 5px;
+  padding: 1px 0 1px 5px;
   /* Horizontal padding of content */
 }
 

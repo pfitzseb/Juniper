@@ -1,10 +1,10 @@
 /*defs*/
 $bg: #172734;
 $fg: #eee;
-$keyword: #8199A3; /* if, while... */
+$keyword: #5B90D4; /* if, while... */
 $number: #009999;
 $def: #FC9906; /* function definition */
-$fun: #5B90D4; /* function calls */
+$fun: #B3CDE0; /* function calls */
 $comment: #999; /* comment */
 $string: #62C610; /* string */
 $builtin: #E4E4AE; /* true, false, Types etc */
@@ -19,7 +19,7 @@ $selected: #345;
 $cursor: white;
 
 $res_fg: #bbb;
-$inline_res_bg: #2D4050;
+$inline_res_bg: #4C6A83;
 $underline_res_bg: #082434;
 $doc_bg: #082434;
 $exception_bg: #522;
@@ -42,7 +42,7 @@ $exception_bg: #522;
 .cm-s-juniper-dark span.cm-comment {color: $comment; font-style: italic;} /* comment */
 .cm-s-juniper-dark span.cm-string {color: $string;}
 .cm-s-juniper-dark span.cm-string-2 {color: $string;}
-.cm-s-juniper-dark span.cm-meta {color: $def; font-weight:bold;} /* @macros */
+.cm-s-juniper-dark span.cm-meta {color: $def; font-style:italic;} /* @macros */
 .cm-s-juniper-dark span.cm-error {color: #f55; background: $exception_bg;}
 .cm-s-juniper-dark span.cm-qualifier {color: $keyword; font-weight:bold;} /* end */
 .cm-s-juniper-dark span.cm-builtin {color: $builtin;} /* true, false, Types etc */
@@ -60,15 +60,21 @@ $exception_bg: #522;
 .cm-s-juniper-dark span.CodeMirror-searching-active { background: #afa; color:black; }
 .cm-s-juniper-dark div.CodeMirror-selected {background: $selected !important;}
 .cm-s-juniper-dark div.CodeMirror-cursor {border-left: 1px solid $cursor;}
-.cm-s-juniper-dark .CodeMirror-activeline-background { background: $active_line; }
+.cm-s-juniper-dark .CodeMirror-activeline-background { 
+    background: $active_line;
+	border-bottom: solid 1px #444;
+	border-top: solid 1px #444;
+}
 .cm-s-juniper-dark .CodeMirror-matchingbracket {
 	font-weight: bold;
 	color: $matching_paren !important;
+	background-color: #061;
 }
 .cm-s-juniper-dark .CodeMirror-nonmatchingbracket {
 	font-weight: bold;
 	text-decoration: line-through;
 	color: $nonmatching_paren !important;
+	background-color: #700;
 }
 .cm-s-juniper-dark .cm-searching { background:#5f5f5f; border-radius:0px; color:$fg !important; }
 .cm-s-juniper-dark .searching-current { background:#13879C; color:#BFFCFF !important; }

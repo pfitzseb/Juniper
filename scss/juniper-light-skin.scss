@@ -299,7 +299,8 @@ input {
 	color: $accent-foreground;
 }
 
-#instarepl .livetoggler.off {color: $bright-fg;
+#instarepl .livetoggler.off {
+    color: $bright-fg;
 	background: $bg;
 }
 
@@ -482,7 +483,7 @@ input {
 
 #right-bar .filter-list h2 {
 	color: $bright-fg;
-	 }
+}
 #right-bar .filter-list .selected, #right-bar .filter-list .selected h2, #right-bar .filter-list li:hover {
 	color: $highlight-fg;
 	background: $highlight-bg;
@@ -934,7 +935,7 @@ input {
 	padding: 4px 8px;
 	display: inline-block;
 	content: "install";
-	 }
+}
 .plugin-manager .source {
 	color: $bright-fg;
 	position: absolute;
@@ -950,7 +951,8 @@ input {
 	color: $bright-fg;
 	padding: 4px 8px;
 	display: inline-block;
-	width: 100%;}
+	width: 100%;
+}
 
 .plugin-manager li:hover .source {
 	width: 70px;
@@ -1067,7 +1069,7 @@ button {
 }
 
 .CodeMirror pre {
-	padding: 0 0 0 5px;
+	padding: 1px 0 1px 5px;
 	/* Horizontal padding of content */
 }
 
@@ -1083,7 +1085,7 @@ button {
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
 	width: auto;
 	border: none !important;
-	background: rgba(0, 200, 200, .4);
+	background: rgba(0, 200, 200, 0.4);
 }
 
 .CodeMirror-gutters {

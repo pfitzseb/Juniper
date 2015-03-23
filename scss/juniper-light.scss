@@ -1,24 +1,24 @@
 /*defs*/
 $bg: #fff;
-$fg: #222;
-$keyword: #33c; /* if, while... */
-$number: #B8AF0E;
+$fg: #111;
+$keyword: #0F65EA; /* if, while... */
+$number: #895005;
 $def: #F19000; /* function definition */
-$fun: #922E07; /* function calls */
-$comment: #999; /* comment */
-$string: #76A009; /* string */
+$fun: #006173; /* function calls */
+$comment: #82AE70; /* comment */
+$string: #C24A00; /* string */
 $tag: #034ce7;
 $attribute: #b20000;
 $header: #b20000;
-$builtin: #9E9E03; /* true, false, Types etc */
-$paren: #1EB6B6; /* parens, brackets */
-$matching_paren: #095f72;
-$matching_paren_bg: #e6f8ff;
-$nonmatching_paren: #f88;
-
+$builtin: #C24A00; /* true, false, Types etc */
+$paren: #003E49; /* parens, brackets */
+$matching_paren: $paren;
+$matching_paren_bg: #D0FF6F;
+$nonmatching_paren: #FF5353;
+$nonmatching_paren_bg: #FFC9C9;
 $file_changed: #AD0000;
 
-$active_line: #FAFFE8;
+$active_line: #FBFBFB;
 $selected: #f2f2f2;
 $cursor: black;
 
@@ -26,8 +26,8 @@ $search_fg: #555;
 $search_curr_bg: #e0e0e0;
 $search_bg: $selected;
 
-$res_fg: #333;
-$inline_res_bg: #E5ECFA;
+$res_fg: #0063B3;
+$inline_res_bg: #D9EEEE;
 $underline_res_bg: #F7FCFF;
 $doc_bg: #F7FCFF;
 $exception_bg: #FFC8C8;
@@ -50,7 +50,7 @@ $exception_bg: #FFC8C8;
 .cm-s-juniper-light span.cm-comment {color: $comment; font-style: italic;} /* comment */
 .cm-s-juniper-light span.cm-string {color: $string;}
 .cm-s-juniper-light span.cm-string-2 {color: $string;}
-.cm-s-juniper-light span.cm-meta {color: $def; font-weight:bold;} /* @macros */
+.cm-s-juniper-light span.cm-meta {color: $def; font-style:italic;} /* @macros */
 .cm-s-juniper-light span.cm-error {color: #f55; background: $exception_bg;}
 .cm-s-juniper-light span.cm-qualifier {color: $keyword; font-weight:bold;} /* end */
 .cm-s-juniper-light span.cm-builtin {color: $builtin;} /* true, false, Types etc */
@@ -69,19 +69,40 @@ $exception_bg: #FFC8C8;
 .cm-s-juniper-light span.CodeMirror-searching-active { background: #afa; color:black; }
 .cm-s-juniper-light div.CodeMirror-selected {background: $selected !important;}
 .cm-s-juniper-light div.CodeMirror-cursor {border-left: 1px solid $cursor;}
-.cm-s-juniper-light .CodeMirror-activeline-background { background: $active_line; }
+.cm-s-juniper-light .CodeMirror-activeline-background { 
+    background: $active_line;
+    border-top: solid #ddd 1px;
+	border-bottom: solid #ddd 1px;
+}
 .cm-s-juniper-light .CodeMirror-matchingbracket {
 	font-weight: bold;
 	color: $matching_paren !important;
-    background-color: $matching_paren_bg !important;
+	background-color: #D0FF6F !important;
 }
 .cm-s-juniper-light .CodeMirror-nonmatchingbracket {
 	font-weight: bold;
 	text-decoration: line-through;
 	color: $nonmatching_paren !important;
+	background-color: $nonmatching_paren_bg !important;
 }
 .cm-s-juniper-light .cm-searching { background:$search_bg; border-radius:0px; color:$fg !important; }
 .cm-s-juniper-light .searching-current { background:$search_curr_bg; color: $search_fg !important; }
+ 
+ /* rainbow brackets */
+span.cm-rainbow.cm-bracket {color: $paren;}
+span.cm-rainbow.cm-bracket.cm-bracket1 {color: $paren; }
+span.cm-rainbow.cm-bracket.cm-bracket2 {color: #3b62b9;}
+span.cm-rainbow.cm-bracket.cm-bracket3 {color: #2ab4ac;}
+span.cm-rainbow.cm-bracket.cm-bracket4 {color: #05b905;}
+span.cm-rainbow.cm-bracket.cm-bracket5 {color: #1a7918;}
+span.cm-rainbow.cm-bracket.cm-bracket6 {color: #b6ac0c;}
+span.cm-rainbow.cm-bracket.cm-bracket7 {color: #d57e20;}
+span.cm-rainbow.cm-bracket.cm-bracket8 {color: #b338be;}
+span.cm-rainbow.cm-bracket.cm-bracket9 {color: #3b62b9;}
+span.cm-rainbow.cm-bracket.cm-bracket10 {color: #2ab4ac;}
+span.cm-rainbow.cm-bracket.cm-bracket11 {color: #05b905;}
+span.cm-rainbow.cm-bracket.cm-bracket12 {color: #1a7918;}
+
  
 /* Light Table stuff */
 
@@ -93,7 +114,7 @@ $exception_bg: #FFC8C8;
 .theme-juniper-light .inline-result {
 	background: $inline_res_bg;
 	color: $res_fg;
-	border-radius: 10px;
+	border-radius: 0px;
 }
  
 .theme-juniper-light .underline-result {

@@ -17,21 +17,21 @@
 
 .cm-s-juniper-light {
   background: #fff;
-  color: #222;
+  color: #111;
 }
 
 .cm-s-juniper-light span.cm-keyword {
-  color: #33c;
+  color: #0F65EA;
   font-weight: bold;
 }
 
 /* if, while... */
 .cm-s-juniper-light span.cm-atom {
-  color: #922E07;
+  color: #006173;
 }
 
 .cm-s-juniper-light span.cm-number {
-  color: #B8AF0E;
+  color: #895005;
 }
 
 .cm-s-juniper-light span.cm-def {
@@ -41,46 +41,46 @@
 
 /* function definition */
 .cm-s-juniper-light span.cm-variable {
-  color: #222;
+  color: #111;
 }
 
 .cm-s-juniper-light span.cm-variable-2 {
-  color: #922E07;
+  color: #006173;
   font-weight: bold;
 }
 
 /* function calls */
 .cm-s-juniper-light span.cm-variable-3 {
-  color: #922E07;
+  color: #006173;
 }
 
 .cm-s-juniper-light span.cm-property {
-  color: #222;
+  color: #111;
 }
 
 .cm-s-juniper-light span.cm-operator {
-  color: #922E07;
+  color: #006173;
   font-weight: bold;
 }
 
 /* operators, ., :, = */
 .cm-s-juniper-light span.cm-comment {
-  color: #999;
+  color: #82AE70;
   font-style: italic;
 }
 
 /* comment */
 .cm-s-juniper-light span.cm-string {
-  color: #76A009;
+  color: #C24A00;
 }
 
 .cm-s-juniper-light span.cm-string-2 {
-  color: #76A009;
+  color: #C24A00;
 }
 
 .cm-s-juniper-light span.cm-meta {
   color: #F19000;
-  font-weight: bold;
+  font-style: italic;
 }
 
 /* @macros */
@@ -90,18 +90,18 @@
 }
 
 .cm-s-juniper-light span.cm-qualifier {
-  color: #33c;
+  color: #0F65EA;
   font-weight: bold;
 }
 
 /* end */
 .cm-s-juniper-light span.cm-builtin {
-  color: #9E9E03;
+  color: #C24A00;
 }
 
 /* true, false, Types etc */
 .cm-s-juniper-light span.cm-bracket {
-  color: #1EB6B6;
+  color: #003E49;
   background: none;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .cm-s-juniper-light span.cm-hr {
-  color: #999;
+  color: #82AE70;
 }
 
 .cm-s-juniper-light span.cm-link {
@@ -131,15 +131,15 @@
 }
 
 .cm-s-juniper-light span.cm-symbol {
-  color: #9E9E03;
+  color: #C24A00;
 }
 
 .cm-s-juniper-light a.file-link {
-  color: #33c;
+  color: #0F65EA;
 }
 
 .cm-s-juniper-light span.cm-bracket0, .cm-s-juniper-light span.cm-bracket-mismatched {
-  color: #f88;
+  color: #FF5353;
 }
 
 .cm-s-juniper-light span.CodeMirror-searching {
@@ -161,30 +161,86 @@
 }
 
 .cm-s-juniper-light .CodeMirror-activeline-background {
-  background: #FAFFE8;
+  background: #FBFBFB;
+  border-top: solid #ddd 1px;
+  border-bottom: solid #ddd 1px;
 }
 
 .cm-s-juniper-light .CodeMirror-matchingbracket {
   font-weight: bold;
-  color: #095f72 !important;
-  background-color: #e6f8ff !important;
+  color: #003E49 !important;
+  background-color: #D0FF6F !important;
 }
 
 .cm-s-juniper-light .CodeMirror-nonmatchingbracket {
   font-weight: bold;
   text-decoration: line-through;
-  color: #f88 !important;
+  color: #FF5353 !important;
+  background-color: #FFC9C9 !important;
 }
 
 .cm-s-juniper-light .cm-searching {
   background: #f2f2f2;
   border-radius: 0px;
-  color: #222 !important;
+  color: #111 !important;
 }
 
 .cm-s-juniper-light .searching-current {
   background: #e0e0e0;
   color: #555 !important;
+}
+
+/* rainbow brackets */
+span.cm-rainbow.cm-bracket {
+  color: #003E49;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket1 {
+  color: #003E49;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket2 {
+  color: #3b62b9;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket3 {
+  color: #2ab4ac;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket4 {
+  color: #05b905;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket5 {
+  color: #1a7918;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket6 {
+  color: #b6ac0c;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket7 {
+  color: #d57e20;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket8 {
+  color: #b338be;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket9 {
+  color: #3b62b9;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket10 {
+  color: #2ab4ac;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket11 {
+  color: #05b905;
+}
+
+span.cm-rainbow.cm-bracket.cm-bracket12 {
+  color: #1a7918;
 }
 
 /* Light Table stuff */
@@ -194,15 +250,15 @@
 }
 
 .theme-juniper-light .inline-result {
-  background: #E5ECFA;
-  color: #333;
-  border-radius: 10px;
+  background: #D9EEEE;
+  color: #0063B3;
+  border-radius: 0px;
 }
 
 .theme-juniper-light .underline-result {
   background: #F7FCFF;
   padding: 0 0 0 10px;
-  color: #333;
+  color: #0063B3;
   border-top: 1px solid #777;
   border-bottom: 1px solid #777;
   margin: 8px 0 8px 0;
@@ -212,7 +268,7 @@
   padding: 0 0 0 10px;
   margin: 8px 0 8px 0;
   background: #F7FCFF;
-  color: #333;
+  color: #0063B3;
 }
 
 .theme-juniper-light .inline-exception {
@@ -221,7 +277,7 @@
   border-bottom: 1px solid #777;
   margin: 8px 0 8px -10px !important;
   background: #FFC8C8;
-  color: #333;
+  color: #0063B3;
   margin: 8px 0 8px 0;
   padding: 0 0 0 10px;
 }
@@ -234,5 +290,5 @@
 .theme-juniper-light .inline-doc pre {
   padding: 0 0 0 10px;
   margin: 8px 0 8px 0;
-  color: #333;
+  color: #0063B3;
 }
