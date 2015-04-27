@@ -1,8 +1,8 @@
 // Defs
 $bg: #3b3f41;
 $fg: #ccc;
-$multi: #202020;
-$border: #444;
+$multi: #323232;
+$border: #555;
 $shadow: black;
 
 $scrollbar: #606970;
@@ -26,6 +26,7 @@ $button-fg: #f4f4f4;
 $button-active-bg: #ccc;
 $button-active-fg: #555;
 
+/* for autocomplete */
 $pane-bg: #3b3f41;
 $pane-scrollbar: #7c7c7c;
 $dark-pane-bg: #1c1f26;
@@ -34,6 +35,7 @@ $pane-border: #888;
 
 $error-bg: #73404C;
 $error-fg: #FFA6A6;
+$error-fg-console: #d43c21;
 $error-highlight-fg: #FFCDCD;
 $error-border: #aF5D5D;
 
@@ -89,6 +91,10 @@ input {
 	background: $highlight-bg;
 }
 
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: inherit !important; /* The little square between H and V scrollbars */
+}
+
 ::-webkit-scrollbar {
 	width: 7px;
 	height: 7px;
@@ -107,7 +113,8 @@ input {
 }
 
 ::-webkit-input-placeholder {
-	color: $placeholder-fg;
+	color: $highlight-fg;
+	opacity: 0.3;
 }
 
 ::-webkit-scrollbar {
@@ -194,9 +201,18 @@ input {
 	background: transparent;
 }
 
+#multi .list ul {
+	height: 25px !important;
+	margin-top: 6px !important;
+}
+
 #multi .list li {
 	box-sizing: border-box;
 	height: 29px;
+	border: 1px solid $border;
+	border-bottom: 0;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 15px !important;
 }
 
 #multi .list .active, #multi .list li:hover {
@@ -221,8 +237,10 @@ input {
 }
 
 #multi .list .tab-close {
-	background: rgba(125,125,125, 0.7);
+	background: $multi;
 	color: $fg;
+	margin-left: 5px !important;
+	border-radius: 0 !important;
 }
 
 #multi .tab-close:hover {
@@ -252,8 +270,7 @@ input {
 }
 
 .console li.error {
-	color: $error-fg;
-	background: $error-bg;
+	color: $error-fg-console;
 	border-color: $bg;
 }
 
@@ -284,7 +301,8 @@ input {
 	color: $accent-foreground;
 }
 
-#instarepl .livetoggler.off {color: $bright-fg;
+#instarepl .livetoggler.off {
+    color: $bright-fg;
 	background: $bg;
 }
 
@@ -376,7 +394,7 @@ input {
 }
 
 .filter-list em {
-	color: #C7E6FF;
+	color: $accent-foreground;
 }
 
 .filter-list .selected, .filter-list li:hover {
@@ -458,7 +476,7 @@ input {
 }
 
 #right-bar .command .filter-list p.binding {
-	color: $fg;
+	color: $bright-fg;
 }
 
 #right-bar .command .filter-list .selected p.binding {
@@ -467,7 +485,7 @@ input {
 
 #right-bar .filter-list h2 {
 	color: $bright-fg;
-	 }
+}
 #right-bar .filter-list .selected, #right-bar .filter-list .selected h2, #right-bar .filter-list li:hover {
 	color: $highlight-fg;
 	background: $highlight-bg;
@@ -624,17 +642,20 @@ input {
 	border-left: 2px solid $bg;
 }
 #find-bar ::-webkit-input-placeholder {
-	color: $hidden-fg;
+	color: $highlight-fg;
+	opacity: 0.3;
 }
 #find-bar button {
 	background: $bg;
+    padding: 7px 10px 6px 10px;
+    border-top: 2px solid $bg;
 }
 #find-bar button:hover, #find-bar button:focus, #find-bar button:active, #find-bar button.active {
 	background: $button-active-bg;
 }
 
 #browser input {
-	background: $hidden-bg;
+	background: $highlight-bg;
 	color: $fg;
 }
 #browser button {
@@ -677,20 +698,18 @@ input {
 	color: $secondary-accent-desat-fg;
 }
 .search-results .entry {
-	color: $placeholder-fg;
+	color: $fg;
 }
 .search-results .entry em {
-	color: $blinding-fg;
+	color: $result-fg;
 }
 .search-results .entry:hover {
-	background: $hidden-bg;
-}
-.search-results .entry:hover .line {
-	background: $medium-highlight-bg;
-	color: $bg;
+	background: $highlight-bg;
+    color: $highlight-fg
 }
 .search-results .path {
 	color: $secondary-accent-dim-fg;
+    border-bottom: 1px solid $border;
 }
 .search-results .file {
 	color: $secondary-accent-fg;
@@ -733,6 +752,10 @@ input {
 	white-space: pre;
 }
 
+.behavior-helper-line {
+	z-index: 5 !important;
+}
+
 .behavior-helper-result {
 	white-space: nowrap;
 	display: inline-block;
@@ -743,11 +766,14 @@ input {
 	padding-left: 20px;
 	box-sizing: border-box;
 	background: none;
+	height: 10px;
+	overflow:visible;
 	color: $usage-fg;
 }
 .behavior-helper-result div {
 	white-space: nowrap;
 	width: -webkit-fit-content;
+	display: inline-block;
 	background: $usage-bg;
 	padding: 0px 5px;
 	border-radius: 0px;
@@ -757,8 +783,13 @@ input {
 	border-radius: 0px;
 	padding: 0px !important;
 }
+
+.behavior-helper-result div > div {
+	margin-left: 10px;
+}
+
 .behavior-helper-result h2 {
-	display: block;
+	display: inline-block;
 	width: -webkit-fit-content;
 	white-space: nowrap;
 }
@@ -789,11 +820,14 @@ input {
 	margin-left: 5px;
 	border: none;
 }
+.plugin-manager {
+	background-color: $bg;
+}
 
 .plugin-manager .version {
 	margin-left: 10px;
 	color: $hidden-fg;
-	 }
+}
 .plugin-manager h3 {
 	color: $hidden-fg;
 }
@@ -809,18 +843,18 @@ input {
 }
 .plugin-manager li.has-update .version {
 	color: $error-fg;
-	 }
+}
 .plugin-manager li.has-update .version {
 	color: $error-fg;
-	 }
+}
 .plugin-manager li.has-update h1 {
 	color: $error-fg;
-	 }
+}
 .plugin-manager li + li {
 	border-top: 1px solid $border;
 }
 .plugin-manager > ul > li:hover {
-	background: $hidden-bg;
+	background: $highlight-bg;
 }
 .plugin-manager .tabs {
 	margin-bottom: 15px;
@@ -833,6 +867,7 @@ input {
 .plugin-manager input {
 	background: $highlight-bg;
 	-webkit-flex: 1;
+    border-left: 1px solid $button-active-bg;
 }
 .plugin-manager button {
 	background: $highlight-bg;
@@ -902,28 +937,30 @@ input {
 	padding: 4px 8px;
 	display: inline-block;
 	content: "install";
-	 }
+}
 .plugin-manager .source {
-	color: transparent;
+	color: $bright-fg;
 	position: absolute;
 	height: 25px;
 	width: 5px;
 	top: 25px;
 	right: 0;
-	background: $accent-foreground;
+	background: $dark-accent-background;
 	overflow: hidden;
-	-webkit-transition: width 0.1s ease-in-out, right 0.1s ease-in-out;
+	-webkit-transition: width 0.1s ease-in-out, right 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 .plugin-manager .source a {
-	color: transparent;
+	color: $bright-fg;
 	padding: 4px 8px;
 	display: inline-block;
-	width: 100%;}
+	width: 100%;
+}
+
 .plugin-manager li:hover .source {
 	width: 70px;
 }
 .plugin-manager li:hover .source a {
-	color: $accent-background;
+	color: $blinding-fg !important;
 }
 
 /**********************************************************
@@ -946,7 +983,7 @@ input {
 #right-bar .clients .load-wrapper .img {
 	width: 20px;
 	height: 20px;
-	background: url("../img/anim.gif")
+	background: url("../img/connectingloader.gif")
 }
 
 #titlebar .button {
@@ -954,7 +991,7 @@ input {
 }
 
 .load-wrapper .img {
-	background: url("../img/anim.gif");
+	background: url("../img/connectingloader.gif");
 }
 
 .timed {
@@ -965,11 +1002,15 @@ input {
 	color: #fb0;
 }
 .workspace .buttons {
-	//display: none;
+	display: none;
 }
 
 #side .content{
     border-right: 1px solid $border;
+}
+
+#multi {
+	top: 0;
 }
 
 #multi .list {
@@ -977,7 +1018,7 @@ input {
 }
 #multi .list li {
 	height: 29px;
-	padding: 6px 10px;
+	padding: 2px 10px;
 	font-size: 9pt;
 	text-align: left;
 }
@@ -987,13 +1028,18 @@ input {
 	top: 29px;
 	left: 0;
 	right: 0;
-	padding: 5px;
-	padding-bottom: 5px;
+	border: 5px solid $multi;
+	padding: 0;
 }
 
 #left-bar .workspace ul.root {
 	top: 0px;
 }
+
+.tree-item p:hover {
+	background-color: $highlight-bg;
+}
+
 #right-bar .filter-list input {
 	padding: 6px 10px;
 	font-size: 10pt;
@@ -1009,6 +1055,14 @@ input {
 	padding-bottom: 10px;
 }
 
+.horizontal-grip{
+	cursor: ns-resize !important;
+}
+
+.vertical-grip{
+	cursor: ew-resize;
+}
+
 button {
 	border-radius: 0;
 }
@@ -1017,66 +1071,76 @@ button {
 }
 
 .CodeMirror pre {
-	padding: 0 0 0 5px;
+	padding: 1px 0 1px 5px;
 	/* Horizontal padding of content */
 }
 
 .CodeMirror div.CodeMirror-cursor {
-	border-left: 1px solid white;
+	border-left: 1px solid black;
 }
+
 /* Shown when moving in bi-directional text */
 .CodeMirror div.CodeMirror-secondarycursor {
-	border-left: 1px solid silver;
+	border-left: 1px solid gray;
 }
+
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
 	width: auto;
 	border: none !important;
-	background: rgba(0, 200, 200, .4);
+	background: rgba(0, 200, 200, 0.4);
 }
 
 .CodeMirror-gutters {
 	background: $multi;
-	border-color: $dark-highlight-bg;
-	border: none;
+	border-right: 1px solid #333;
 }
+
 .CodeMirror-hints.empty {
 	display: none;
 }
+
 .CodeMirror-hints {
 	position: absolute;
 	z-index: 1000000000000000;
 	overflow: hidden;
 	list-style: none;
-	 margin: 0;
+	margin: 0;
 	padding: 2px;
-	 border-radius: 2px;
+	border-radius: 2px;
 	border: 1px solid $pane-bg;
-	 background: $pane-bg;
+	background: $pane-bg;
 	font-size: 90%;
 	font-family: inherit;
-	 max-height: 20em;
+	max-height: 20em;
 }
+
 .CodeMirror-hints ul {
 	overflow-y: auto;
 	max-height: 20em;
 }
+
 .CodeMirror-hints ul li {
 	margin: 0;
 	padding: 0 4px;
-	border-radius: 2px;
+	border-radius: 0;
 	max-width: 60em;
 	overflow: hidden;
 	white-space: pre;
-	color: #ccc;
+	color: $fg;
 	cursor: pointer;
+	border-left: 1px solid $pane-bg;
 }
+
 .CodeMirror-hints input {
 	display: none;
 }
+
 .CodeMirror-hints .selected {
 	background: $highlight-bg;
 	color: $highlight-fg;
+	border-left: 1px solid $accent-foreground;
 }
+
 .CodeMirror-hints ul::-webkit-scrollbar-thumb {
 	background: $scrollbar;
 	border-color: $scrollbar;

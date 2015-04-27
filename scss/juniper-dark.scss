@@ -2,21 +2,29 @@
 $bg: #172734;
 $fg: #eee;
 $keyword: #5B90D4; /* if, while... */
-$number: #009999;
+$number: #E1FFFF;
 $def: #FC9906; /* function definition */
-$fun: #B3CDE0; /* function calls */
-$comment: #999; /* comment */
-$string: #62C610; /* string */
-$builtin: #E4E4AE; /* true, false, Types etc */
+$fun: #6BE7D4; /* function calls */
+$comment: #4CA60F; /* comment */
+$string: #F7DB82; /* string */
+$tag: #F7DB82;
+$attribute: #b20000;
+$header: #b20000;
+$builtin: #F7DB82; /* true, false, Types etc */
 $paren: #0bb; /* parens, brackets */
-$matching_paren: #0ee;
+$matching_paren: #D0FF6F;
+$matching_paren_bg: #086430;
 $nonmatching_paren: #f88;
-
+$nonmatching_paren_bg: #930000;
 $file_changed: #f50;
 
 $active_line: #234;
 $selected: #345;
 $cursor: white;
+
+$search_fg: #555;
+$search_curr_bg: #e0e0e0;
+$search_bg: $selected;
 
 $res_fg: #bbb;
 $inline_res_bg: #4C6A83;
@@ -26,60 +34,61 @@ $exception_bg: #522;
 
 
 #multi.theme-juniper-dark .content { background: $bg; }
-#multi.theme-juniper-dark .list .active, #multi.theme-juniper-dark .list li:hover { background:$bg; color: $fg; }
+/*#multi.theme-juniper-dark .list .active, #multi.theme-juniper-dark .list li:hover { background: #f0f0f0; color: $fg; }*/
 #multi.theme-juniper-dark .list .dirty { color: $file_changed; }
  
 .cm-s-juniper-dark { background: $bg; color: $fg }
 .cm-s-juniper-dark span.cm-keyword {color: $keyword; font-weight:bold;} /* if, while... */
 .cm-s-juniper-dark span.cm-atom {color: $fun;}
 .cm-s-juniper-dark span.cm-number {color: $number;}
-.cm-s-juniper-dark span.cm-def {color: $def; font-weight: bold;} /* function definition */
+.cm-s-juniper-dark span.cm-def {color: $def;} /* function definition */
 .cm-s-juniper-dark span.cm-variable {color: $fg;}
-.cm-s-juniper-dark span.cm-variable-2 {color: $fun; font-weight: bold;} /* function calls */
+.cm-s-juniper-dark span.cm-variable-2 {color: $fun;} /* function calls */
 .cm-s-juniper-dark span.cm-variable-3 {color: $fun;}
 .cm-s-juniper-dark span.cm-property {color: $fg;}
-.cm-s-juniper-dark span.cm-operator {color: $fun; font-weight: bold;} /* operators, ., :, = */
+.cm-s-juniper-dark span.cm-operator {color: $fun;} /* operators, ., :, = */
 .cm-s-juniper-dark span.cm-comment {color: $comment; font-style: italic;} /* comment */
 .cm-s-juniper-dark span.cm-string {color: $string;}
 .cm-s-juniper-dark span.cm-string-2 {color: $string;}
 .cm-s-juniper-dark span.cm-meta {color: $def; font-style:italic;} /* @macros */
 .cm-s-juniper-dark span.cm-error {color: #f55; background: $exception_bg;}
-.cm-s-juniper-dark span.cm-qualifier {color: $keyword; font-weight:bold;} /* end */
+.cm-s-juniper-dark span.cm-qualifier {color: $keyword;} /* end */
 .cm-s-juniper-dark span.cm-builtin {color: $builtin;} /* true, false, Types etc */
 .cm-s-juniper-dark span.cm-bracket {color: $paren; background: none;} /* parens, brackets */
-.cm-s-juniper-dark span.cm-tag {color: $builtin;}
-.cm-s-juniper-dark span.cm-attribute {color: $builtin;}
-.cm-s-juniper-dark span.cm-header {color: $builtin;}
+.cm-s-juniper-dark span.cm-tag {color: $tag;}
+.cm-s-juniper-dark span.cm-attribute {color: $attribute;}
+.cm-s-juniper-dark span.cm-header {color: $header;}
 .cm-s-juniper-dark span.cm-quote {color: #0f0;}
 .cm-s-juniper-dark span.cm-hr {color: $comment;}
 .cm-s-juniper-dark span.cm-link {color: #00f;}
 .cm-s-juniper-dark span.cm-symbol {color: $builtin; }
- 
+.cm-s-juniper-dark a.file-link {color: $keyword; }
+
 .cm-s-juniper-dark span.cm-bracket0, .cm-s-juniper-dark span.cm-bracket-mismatched { color:$nonmatching_paren;}
 .cm-s-juniper-dark span.CodeMirror-searching { background: #aaa; color:black; }
 .cm-s-juniper-dark span.CodeMirror-searching-active { background: #afa; color:black; }
 .cm-s-juniper-dark div.CodeMirror-selected {background: $selected !important;}
 .cm-s-juniper-dark div.CodeMirror-cursor {border-left: 1px solid $cursor;}
 .cm-s-juniper-dark .CodeMirror-activeline-background { 
-    background: $active_line;
-	border-bottom: solid 1px #444;
-	border-top: solid 1px #444;
+    background: inherit;
+	margin-left: 2px;
+    border: solid #334 2px;
 }
 .cm-s-juniper-dark .CodeMirror-matchingbracket {
 	font-weight: bold;
 	color: $matching_paren !important;
-	background-color: #061;
+	background-color: $matching_paren_bg !important;
 }
 .cm-s-juniper-dark .CodeMirror-nonmatchingbracket {
 	font-weight: bold;
 	text-decoration: line-through;
 	color: $nonmatching_paren !important;
-	background-color: #700;
+	background-color: $nonmatching_paren_bg !important;
 }
-.cm-s-juniper-dark .cm-searching { background:#5f5f5f; border-radius:0px; color:$fg !important; }
-.cm-s-juniper-dark .searching-current { background:#13879C; color:#BFFCFF !important; }
- 
-/* Light Table stuff */
+.cm-s-juniper-dark .cm-searching { background:$search_bg; border-radius:0px; color:$fg !important; }
+.cm-s-juniper-dark .searching-current { background:$search_curr_bg; color: $search_fg !important; }
+  
+/* dark Table stuff */
 
 .julia {
 	font-family: inherit !important;
@@ -89,7 +98,7 @@ $exception_bg: #522;
 .theme-juniper-dark .inline-result {
 	background: $inline_res_bg;
 	color: $res_fg;
-	border-radius: 10px;
+	border-radius: 0px;
 }
  
 .theme-juniper-dark .underline-result {

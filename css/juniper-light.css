@@ -27,7 +27,7 @@
 
 /* if, while... */
 .cm-s-juniper-light span.cm-atom {
-  color: #006173;
+  color: #008379;
 }
 
 .cm-s-juniper-light span.cm-number {
@@ -36,7 +36,6 @@
 
 .cm-s-juniper-light span.cm-def {
   color: #F19000;
-  font-weight: bold;
 }
 
 /* function definition */
@@ -45,13 +44,12 @@
 }
 
 .cm-s-juniper-light span.cm-variable-2 {
-  color: #006173;
-  font-weight: bold;
+  color: #008379;
 }
 
 /* function calls */
 .cm-s-juniper-light span.cm-variable-3 {
-  color: #006173;
+  color: #008379;
 }
 
 .cm-s-juniper-light span.cm-property {
@@ -59,13 +57,12 @@
 }
 
 .cm-s-juniper-light span.cm-operator {
-  color: #006173;
-  font-weight: bold;
+  color: #008379;
 }
 
 /* operators, ., :, = */
 .cm-s-juniper-light span.cm-comment {
-  color: #82AE70;
+  color: #21AE15;
   font-style: italic;
 }
 
@@ -91,7 +88,6 @@
 
 .cm-s-juniper-light span.cm-qualifier {
   color: #0F65EA;
-  font-weight: bold;
 }
 
 /* end */
@@ -123,7 +119,7 @@
 }
 
 .cm-s-juniper-light span.cm-hr {
-  color: #82AE70;
+  color: #21AE15;
 }
 
 .cm-s-juniper-light span.cm-link {
@@ -161,9 +157,9 @@
 }
 
 .cm-s-juniper-light .CodeMirror-activeline-background {
-  background: #FBFBFB;
-  border-top: solid #ddd 1px;
-  border-bottom: solid #ddd 1px;
+  background: inherit;
+  margin-left: 2px;
+  border: solid #eee 2px;
 }
 
 .cm-s-juniper-light .CodeMirror-matchingbracket {

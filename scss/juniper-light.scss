@@ -4,8 +4,8 @@ $fg: #111;
 $keyword: #0F65EA; /* if, while... */
 $number: #895005;
 $def: #F19000; /* function definition */
-$fun: #006173; /* function calls */
-$comment: #82AE70; /* comment */
+$fun: #008379; /* function calls */
+$comment: #21AE15; /* comment */
 $string: #C24A00; /* string */
 $tag: #034ce7;
 $attribute: #b20000;
@@ -41,18 +41,18 @@ $exception_bg: #FFC8C8;
 .cm-s-juniper-light span.cm-keyword {color: $keyword; font-weight:bold;} /* if, while... */
 .cm-s-juniper-light span.cm-atom {color: $fun;}
 .cm-s-juniper-light span.cm-number {color: $number;}
-.cm-s-juniper-light span.cm-def {color: $def; font-weight: bold;} /* function definition */
+.cm-s-juniper-light span.cm-def {color: $def;} /* function definition */
 .cm-s-juniper-light span.cm-variable {color: $fg;}
-.cm-s-juniper-light span.cm-variable-2 {color: $fun; font-weight: bold;} /* function calls */
+.cm-s-juniper-light span.cm-variable-2 {color: $fun;} /* function calls */
 .cm-s-juniper-light span.cm-variable-3 {color: $fun;}
 .cm-s-juniper-light span.cm-property {color: $fg;}
-.cm-s-juniper-light span.cm-operator {color: $fun; font-weight: bold;} /* operators, ., :, = */
+.cm-s-juniper-light span.cm-operator {color: $fun;} /* operators, ., :, = */
 .cm-s-juniper-light span.cm-comment {color: $comment; font-style: italic;} /* comment */
 .cm-s-juniper-light span.cm-string {color: $string;}
 .cm-s-juniper-light span.cm-string-2 {color: $string;}
 .cm-s-juniper-light span.cm-meta {color: $def; font-style:italic;} /* @macros */
 .cm-s-juniper-light span.cm-error {color: #f55; background: $exception_bg;}
-.cm-s-juniper-light span.cm-qualifier {color: $keyword; font-weight:bold;} /* end */
+.cm-s-juniper-light span.cm-qualifier {color: $keyword;} /* end */
 .cm-s-juniper-light span.cm-builtin {color: $builtin;} /* true, false, Types etc */
 .cm-s-juniper-light span.cm-bracket {color: $paren; background: none;} /* parens, brackets */
 .cm-s-juniper-light span.cm-tag {color: $tag;}
@@ -63,21 +63,21 @@ $exception_bg: #FFC8C8;
 .cm-s-juniper-light span.cm-link {color: #00f;}
 .cm-s-juniper-light span.cm-symbol {color: $builtin; }
 .cm-s-juniper-light a.file-link {color: $keyword; }
- 
+
 .cm-s-juniper-light span.cm-bracket0, .cm-s-juniper-light span.cm-bracket-mismatched { color:$nonmatching_paren;}
 .cm-s-juniper-light span.CodeMirror-searching { background: #aaa; color:black; }
 .cm-s-juniper-light span.CodeMirror-searching-active { background: #afa; color:black; }
 .cm-s-juniper-light div.CodeMirror-selected {background: $selected !important;}
 .cm-s-juniper-light div.CodeMirror-cursor {border-left: 1px solid $cursor;}
 .cm-s-juniper-light .CodeMirror-activeline-background { 
-    background: $active_line;
-    border-top: solid #ddd 1px;
-	border-bottom: solid #ddd 1px;
+    background: inherit;
+	margin-left: 2px;
+    border: solid #eee 2px;
 }
 .cm-s-juniper-light .CodeMirror-matchingbracket {
 	font-weight: bold;
 	color: $matching_paren !important;
-	background-color: #D0FF6F !important;
+	background-color: $matching_paren_bg !important;
 }
 .cm-s-juniper-light .CodeMirror-nonmatchingbracket {
 	font-weight: bold;
